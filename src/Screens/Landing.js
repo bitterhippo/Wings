@@ -1,10 +1,17 @@
 import React from 'react';
 
+//Subcomponents
+import { MainWrapper } from '../Components/PPC/MainWrapper';
+import { SideBar } from '../Components/SideBar/SideBar';
+
 const Landing = () => {
   return (
-    <div>
-      test landing page
-    </div>
+    <MainWrapper>
+      <SideBar />
+      <>
+        Dummy Content
+      </>
+    </MainWrapper>
   )
 };
 
