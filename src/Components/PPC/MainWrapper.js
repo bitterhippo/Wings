@@ -20,6 +20,9 @@ const styles = {
     display: 'grid',
   },
   sideBarWrapper: {
-    
+
+  },
+  contentWrapper: {
+    marginLeft: 100
   }
 };
