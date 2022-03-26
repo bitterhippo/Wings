@@ -4,9 +4,14 @@ import React, { useState } from 'react';
 import Colors from '../Colors';
 import { FiLogIn, FiUserPlus } from "react-icons/fi";
 
-export const Bubbles = (props) => {
+export const Bubbles = ({ iconName }) => {
 
   const [selected, setSelected] = useState(false);
+
+  const components = {
+    LogIn : <FiLogIn color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
+    SignUp : <FiLogIn color={selected ? Colors.Green : Colors. AshBlack} size={24} />
+  }
 
   return (
     <div
@@ -20,10 +25,7 @@ export const Bubbles = (props) => {
       onMouseLeave={() => setSelected(!selected)}
     >
       <div style={styles.iconContainer}>
-        <FiLogIn
-        color={selected ? Colors.Green : Colors.AshBlack}
-        size={24} 
-        />
+        {components[iconName]}
       </div>
     </div>
   )

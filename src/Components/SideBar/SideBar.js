@@ -4,12 +4,14 @@ import React from 'react';
 import Colors from '../Colors';
 import { Bubbles } from './Bubbles';
 
+//Subcomponents
+
 export const SideBar = () => {
   return (
     <div style={styles.barWrapper}>
       <div style={styles.bubbleList}>
-        <Bubbles />
-        <Bubbles />
+        <Bubbles iconName={"LogIn"}/>
+        <Bubbles iconName={"LogIn"}/>
       </div>
     </div>
   )
