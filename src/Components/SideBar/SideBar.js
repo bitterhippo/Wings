@@ -9,6 +9,7 @@ export const SideBar = () => {
     <div style={styles.barWrapper}>
       <div style={styles.bubbleList}>
         <Bubbles />
+        <Bubbles />
       </div>
     </div>
   )
@@ -18,11 +19,14 @@ const styles = {
   barWrapper: {
     position: 'fixed',
     backgroundColor: Colors.AshBlack,
-    minWidth: 100,
+    minWidth: 75,
     height: "100%",
     borderRight: `2px solid ${Colors.DeepBlack}`
   },
   bubbleList: {
     margin: '50% auto',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 25
   }
 };

@@ -1,5 +1,5 @@
 const Colors = {
-  Green: "#005D17",
+  Green: "#9ACD32",
   Crimson: "#DC143C",
   AshBlack: "#4C574F",
   WhiteSilver: "#F8F8F8",
