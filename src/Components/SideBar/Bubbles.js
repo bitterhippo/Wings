@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 
 //Subcomponents
 import Colors from '../Colors';
-import { FiLogIn, FiUserPlus } from "react-icons/fi";
+import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers } from "react-icons/fi";
 
-export const Bubbles = ({ iconName }) => {
+export const Bubbles = ({ iconName, onClick }) => {
 
   const [selected, setSelected] = useState(false);
 
   const components = {
     LogIn : <FiLogIn color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
-    SignUp : <FiLogIn color={selected ? Colors.Green : Colors. AshBlack} size={24} />
+    SignUp : <FiUserPlus color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
+    Info : <FiInfo color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
+    Settings : <FiSettings color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
+    Community: <FiUsers color={selected ? Colors.Green : Colors. AshBlack} size={24} />
   }
 
   return (
@@ -27,6 +30,7 @@ export const Bubbles = ({ iconName }) => {
       <div style={styles.iconContainer}>
         {components[iconName]}
       </div>
+      { selected && <div style={styles.bubbleText}>{iconName}</div>}
     </div>
   )
 };
@@ -42,5 +46,14 @@ const styles = {
   },
   iconContainer: {
     paddingTop: 8
+  },
+  bubbleText: {
+    position: 'absolute',
+    backgroundColor: 'white',
+    zIndex: 1,
+    border: `1px solid ${Colors.DeepBlack}`,
+    padding: '3px 5px',
+    marginTop: '10px',
+    borderRadius: '5px'
   }
 };

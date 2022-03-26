@@ -11,7 +11,10 @@ export const SideBar = () => {
     <div style={styles.barWrapper}>
       <div style={styles.bubbleList}>
         <Bubbles iconName={"LogIn"}/>
-        <Bubbles iconName={"LogIn"}/>
+        <Bubbles iconName={"SignUp"}/>
+        <Bubbles iconName={"Info"} />
+        <Bubbles iconName={"Settings"} />
+        <Bubbles iconName={"Community"} />
       </div>
     </div>
   )
@@ -29,6 +32,6 @@ const styles = {
     margin: '50% auto',
     display: 'flex',
     flexDirection: 'column',
-    gap: 25
+    gap: 35
   }
 };
