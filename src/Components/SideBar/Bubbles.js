@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Colors from '../Colors';
 import { FiLogIn, FiUserPlus } from "react-icons/fi";
 
-export const Bubbles = ({ icon }) => {
+export const Bubbles = (props) => {
 
   const [selected, setSelected] = useState(false);
 
