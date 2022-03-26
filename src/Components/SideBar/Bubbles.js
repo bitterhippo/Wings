@@ -9,11 +9,11 @@ export const Bubbles = ({ iconName, onClick }) => {
   const [selected, setSelected] = useState(false);
 
   const components = {
-    LogIn : <FiLogIn color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
-    SignUp : <FiUserPlus color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
-    Info : <FiInfo color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
-    Settings : <FiSettings color={selected ? Colors.Green : Colors. AshBlack} size={24} />,
-    Community: <FiUsers color={selected ? Colors.Green : Colors. AshBlack} size={24} />
+    LogIn: <FiLogIn color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
+    SignUp: <FiUserPlus color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
+    Info: <FiInfo color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
+    Settings: <FiSettings color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
+    Community: <FiUsers color={selected ? Colors.Green : Colors.AshBlack} size={24} />
   }
 
   return (
@@ -30,7 +30,12 @@ export const Bubbles = ({ iconName, onClick }) => {
       <div style={styles.iconContainer}>
         {components[iconName]}
       </div>
-      { selected && <div style={styles.bubbleText}>{iconName}</div>}
+      {/* Floating Text Render Condiiton */}
+      <div
+        style={{ ...styles.bubbleText, display: !selected ? 'none' : ''}}
+      >
+        {iconName}
+      </div>
     </div>
   )
 };
