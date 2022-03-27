@@ -10,11 +10,11 @@ export const SideBar = () => {
   return (
     <div style={styles.barWrapper}>
       <div style={styles.bubbleList}>
-        <Bubbles iconName={"LogIn"}/>
-        <Bubbles iconName={"SignUp"}/>
-        <Bubbles iconName={"Info"} />
-        <Bubbles iconName={"Settings"} />
-        <Bubbles iconName={"Community"} />
+        <Bubbles iconName={"LogIn"} route={"/login"}/>
+        <Bubbles iconName={"SignUp"} route={"/signup"}/>
+        <Bubbles iconName={"Info"} route={"/information"}/>
+        <Bubbles iconName={"Settings"} route={"/settings"} />
+        <Bubbles iconName={"Community"} route={"/community"}/>
       </div>
     </div>
   )

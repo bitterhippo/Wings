@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Colors from '../Colors';
 import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers } from "react-icons/fi";
 
-export const Bubbles = ({ iconName, onClick }) => {
+export const Bubbles = ({ iconName, route }) => {
 
   const [selected, setSelected] = useState(false);
 
@@ -29,11 +29,13 @@ export const Bubbles = ({ iconName, onClick }) => {
       onMouseLeave={() => setSelected(!selected)}
     >
       <div style={styles.iconContainer}>
-        {components[iconName]}
+        <Link to={route}>
+          {components[iconName]}
+        </Link>
       </div>
       {/* Floating Text Render Condiiton */}
       <div
-        style={{ ...styles.bubbleText, display: !selected ? 'none' : ''}}
+        style={{ ...styles.bubbleText, display: !selected ? 'none' : '' }}
       >
         {iconName}
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Routes, 
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -10,6 +10,10 @@ import {
 import { Home } from './Home';
 import { NotFound } from './NotFound';
 import { LogIn } from './LogIn';
+import { Community} from './Community';
+import { Settings } from './Settings';
+import { Information } from './Information';
+import { SignUp } from './SignUp';
 
 //Subcomponents
 import { MainWrapper } from '../Components/PPC/MainWrapper';
@@ -17,20 +21,20 @@ import { SideBar } from '../Components/SideBar/SideBar';
 
 const Landing = () => {
   return (
-    <MainWrapper>
-      <SideBar />
-      <Router>
+    <Router>
+      <MainWrapper>
+        <SideBar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<LogIn />} />
-          <Route exact path="/signup" element={<Home />} />
-          <Route exact path="/info" element={<Home />} />
-          <Route exact path="/settings" element={<Home />} />
-          <Route exact path="/community" element={<Home />} />
-          <Route exact path="*" element={<NotFound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LogIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/information" element={<Information />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
-    </MainWrapper>
+      </MainWrapper>
+    </Router>
   )
 };
 
