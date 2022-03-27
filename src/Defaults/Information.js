@@ -2,24 +2,27 @@ import React from 'react';
 
 export const InformationDefaults = {
   ServerInformation: {
-    data: `This is a basic run-down of our server settings, as well as a brief explanation to any custom changes made to the server that deviate from normal era. You may find additional answers to questions in our FAQ, otherwise ask in our Discord.
-
-    Level Cap: 75.
-    Expansion Era: Wings of the Goddess.
-    Cutoff Date: March 23rd, 2010. This was the final patch before Abyssea prepatch changes started happening.
-    Movement Speed: 40. (Base WOTG era.)
-    Crafting Rates: 1.0.
-    Skillup Rates: 1.0.
-    Experience Rates: 1.0. Wings of the Goddess enhanced Signet is also available.
-    Dual Boxing: Not allowed. 1 character logged in per IP, enforced by the server's software.
-    Fields of Valor: Enabled, one page per game day as in era.
-    Wardrobes/Sack: Unlocked with mission progress. (Nation, Zilart, CoP, and ToAU for Wardrobes; WotG for Sack)
-    Auction House: Player stocked. 30 days lifespan for listings.
-    Outpost Warps: Can utilize gil only, as in era.
-    Instant Re-raise / Instant Warp: Original, higher CP cost.
-    Addon Scenarios: A Crystalline Prophecy is enabled. The rest will probably be added later in server's life.
-    Gardening: Enabled.
-    Crafting Myth: Removed.`
+    data: <>
+      This is a basic run-down of our server settings, as well as a brief explanation to any custom changes made to the server that deviate from normal era. You may find additional answers to questions in our FAQ, otherwise ask in our Discord.
+      <br />
+      <br />
+      <b>Level Cap:</b> 75. <br />
+      <b>Expansion Era:</b> Wings of the Goddess. <br />
+      <b>Cutoff Date:</b> March 23rd, 2010. This was the final patch before Abyssea prepatch changes started happening. <br />
+      <b>Movement Speed:</b> 40. (Base WOTG era.) <br />
+      <b>Crafting Rates:</b> 1.0. <br />
+      <b>Skillup Rates:</b> 1.0. <br />
+      <b>Experience Rates:</b> 1.0. Wings of the Goddess enhanced Signet is also available. <br />
+      <b>Dual Boxing:</b> Not allowed. 1 character logged in per IP, enforced by the server's software. <br />
+      <b>Fields of Valor:</b> Enabled, one page per game day as in era. <br />
+      <b>Wardrobes/Sack:</b> Unlocked with mission progress. (Nation, Zilart, CoP, and ToAU for Wardrobes; WotG for Sack) <br />
+      <b>Auction House:</b> Player stocked. 30 days lifespan for listings. <br />
+      <b>Outpost Warps:</b> Can utilize gil only, as in era. <br />
+      <b>Instant Re-raise / Instant Warp:</b> Original, higher CP cost. <br />
+      <b>Addon Scenarios:</b> A Crystalline Prophecy is enabled. The rest will probably be added later in server's life. <br />
+      <b>Gardening:</b> Enabled. <br />
+      <b>Crafting Myth:</b> Removed.<br />
+    </>
   },
   Customizations: {
     data: `Yell: Enabled globally on a 15 minute cooldown.
