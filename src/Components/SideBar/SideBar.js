@@ -29,7 +29,7 @@ const styles = {
     borderRight: `2px solid ${Colors.DeepBlack}`
   },
   bubbleList: {
-    margin: '50% auto',
+    margin: '100px auto 0px auto',
     display: 'flex',
     flexDirection: 'column',
     gap: 35

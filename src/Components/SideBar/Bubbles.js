@@ -28,18 +28,19 @@ export const Bubbles = ({ iconName, route }) => {
       onMouseEnter={() => setSelected(!selected)}
       onMouseLeave={() => setSelected(!selected)}
     >
-      <div style={styles.iconContainer}>
-        <Link to={route}>
+      <Link to={route}>
+        <div style={styles.iconContainer}>
           {components[iconName]}
-        </Link>
-      </div>
+
+        </div>
+      </Link>
       {/* Floating Text Render Condiiton */}
       <div
         style={{ ...styles.bubbleText, display: !selected ? 'none' : '' }}
       >
         {iconName}
       </div>
-    </div>
+    </div >
   )
 };
 
