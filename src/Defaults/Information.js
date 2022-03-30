@@ -50,124 +50,321 @@ export const InformationDefaults = {
         <li>Emperor's Hairpin (Valkurm Emperor)</li>
       </ul>
       <b>Loot</b>: Chests and Coffers are instant repops to allow access to quest items for players. Players who open coffers or chests for loot will incur a 30-minute zone-wide illusion timer that will not allow them to open another coffer or chest to gain loot until the illusion timer wears off.<br />
-      <b>Beastmaster</b>: All high quality versions of Beastmaster jug pets have had their level cap raised to level 75. Normal quality versions retain their normal level caps.
+      <b>Beastmaster</b>: All high quality versions of Beastmaster jug pets have had their level cap raised to level 75. Normal quality versions retain their normal level caps.<br />
       <b>Crossbow Bolts / Wooden Arrow</b>: All jobs are able to equip, primarily for THF's benefit since it has no low level Marksmanship ammo.
     </>
   },
   Rules: {
     data: <>
-      Rules
-      Wings strives to create a fun and friendly and fair environment to all players.
+      <br></br>
+      <br></br>
+      Wings strives to create a fun and friendly and fair environment to all players. <br />
       Therefore, by joining Wings you agree to the following rules and terms:
-      Any of the following activities may lead to permanent ban without warning
-      RMT (Real Money Trade) - Any activity involving real world money, including the sale or purchase of accounts, in-game currency and/or items. This rule also extends to the trading of in-game services for out-of-game forms of currency, including things like Twitch subscriptions, channel points, etc as these are tied directly to actual forms of currency. All in-game commerce is limited to in-game currency. Any RMT activity will lead to an immediate and permanent ban of both the seller and the buyer.
-      Multiboxing. Wings has a custom built anti-multiboxing login server, and using any sort of means to bypass the single-character login restriction is strictly against the rules. If you have multiple players who live in the same household full-time, please create an IP exception ticket via our Discord GM ticketing system and a staff member will guide you through the process.
-      The use of unauthorized addons or plugins. Please scroll below to learn more information about the types of addons and plugins that are allowed. If you think an addon you would like to use may potentially be against the general rules, please reach out to a staff member in Discord by making a GM ticket and ask befor using it. Claiming that "it wasn't specifically listed on the rules page" will not pardon you of consequences should you be found using any type of addon that is not allowed.
-      MPK (Monster Player Killing) - Intentionally attempting to cause the KO of another player, either by luring monsters to attack players or any other means.
-      Exploiting any bugs or oversights in order to gain an unfair advantage over other players, be it in adventuring or commerce. Finding and reporting such bugs without taking advantage of them is not considered a violation as long as it does not impact the server performance and/or stability. We therefore encourage making use of the beta test server or a local copy of the server for bug hunting. Bug hunting on the live server is not allowed, and will not pardon you of any consequences should your actions be considered cheating or affect the server in a negative way.
-      Botting - Using any third party tools or scripts which automate player activity, other than tools explicitly allowed and the in-game macro feature. This includes things like infinite loop scripts to skill up magic skill, infinite crafting beyond what is possible with a /waitsynth macro, fishing bots or any type of scripted actions that require zero player input.
-      Tool assisted claiming of any kind will be met with an immediate ban. While we don't expect this to come up often due to the nature of how Notorious Monsters are set up on Wings, please be aware that we ARE able to detect these.
-      Using explicitly disallowed third party tools or addons.
-      Ignoring or disobeying instructions from GMs (Game Masters), who may monitor game activity either visibly or hidden. If a GM gives you a direct order, follow the order, even if it is not explicitly mentioned in the rules. While you may not find it to be fair in the moment, instead of going off on that GM, simply do what they say and then reach out to a senior GM in the discord or forums for further assistance, where you will have a fair chance to speak out.
-      Using inside information - Inside information is any information you have which is not public knowledge. Any act upon that information which might give either you or a third party an advantage over those who don't have it will lead to an immediate ban, even if you were given the information through official channels. This includes passing the information to third parties.
-      Repeated violation of any other rule after being warned.
-      Please note that "permanent ban" means you will not be allowed to create another character and/or another account and we will immediately ban any such accounts when found, even if the new character was not caught in violation of the rules again. Furthermore, anyone knowingly interacting with such characters may be subject to punitive actions as well, which means that by insisting on playing after having been permanently banned you pose risk to your friends as well. Our best recommendation is to avoid being banned and not find yourself in such a situation to begin with.
+      <b><br />
+        <br></br>
+        Any of the following activities may lead to permanent ban without warning</b><br></br>
+      <ul>
+        <li>
+          RMT (Real Money Trade) - Any activity involving real world money, including the sale or purchase of accounts, in-game currency and/or items. This rule also extends to the trading of in-game services for out-of-game forms of currency, including things like Twitch subscriptions, channel points, etc as these are tied directly to actual forms of currency. All in-game commerce is limited to in-game currency. Any RMT activity will lead to an immediate and permanent ban of both the seller and the buyer.
+          Multiboxing. Wings has a custom built anti-multiboxing login server, and using any sort of means to bypass the single-character login restriction is strictly against the rules. If you have multiple players who live in the same household full-time, please create an IP exception ticket via our Discord GM ticketing system and a staff member will guide you through the process.
+        </li>
+        <li>
+          The use of unauthorized addons or plugins. Please scroll below to learn more information about the types of addons and plugins that are allowed. If you think an addon you would like to use may potentially be against the general rules, please reach out to a staff member in Discord by making a GM ticket and ask befor using it. Claiming that "it wasn't specifically listed on the rules page" will not pardon you of consequences should you be found using any type of addon that is not allowed.
+        </li>
+        <li>
+          MPK (Monster Player Killing) - Intentionally attempting to cause the KO of another player, either by luring monsters to attack players or any other means.
+        </li>
+        <li>
+          Exploiting any bugs or oversights in order to gain an unfair advantage over other players, be it in adventuring or commerce. Finding and reporting such bugs without taking advantage of them is not considered a violation as long as it does not impact the server performance and/or stability. We therefore encourage making use of the beta test server or a local copy of the server for bug hunting. Bug hunting on the live server is not allowed, and will not pardon you of any consequences should your actions be considered cheating or affect the server in a negative way.
+        </li>
+        <li>
+          Botting - Using any third party tools or scripts which automate player activity, other than tools explicitly allowed and the in-game macro feature. This includes things like infinite loop scripts to skill up magic skill, infinite crafting beyond what is possible with a /waitsynth macro, fishing bots or any type of scripted actions that require zero player input.
+        </li>
+        <li>
+          Tool assisted claiming of any kind will be met with an immediate ban. While we don't expect this to come up often due to the nature of how Notorious Monsters are set up on Wings, please be aware that we ARE able to detect these.
+        </li>
+        <li>
+          Using explicitly disallowed third party tools or addons.
+          Ignoring or disobeying instructions from GMs (Game Masters), who may monitor game activity either visibly or hidden. If a GM gives you a direct order, follow the order, even if it is not explicitly mentioned in the rules. While you may not find it to be fair in the moment, instead of going off on that GM, simply do what they say and then reach out to a senior GM in the discord or forums for further assistance, where you will have a fair chance to speak out.
+        </li>
+        <li>
+          Using inside information - Inside information is any information you have which is not public knowledge. Any act upon that information which might give either you or a third party an advantage over those who don't have it will lead to an immediate ban, even if you were given the information through official channels. This includes passing the information to third parties.
+        </li>
+        <li>
+          Repeated violation of any other rule after being warned.
+          Please note that "permanent ban" means you will not be allowed to create another character and/or another account and we will immediately ban any such accounts when found, even if the new character was not caught in violation of the rules again. Furthermore, anyone knowingly interacting with such characters may be subject to punitive actions as well, which means that by insisting on playing after having been permanently banned you pose risk to your friends as well. Our best recommendation is to avoid being banned and not find yourself in such a situation to begin with.
+        </li>
+      </ul>
+      <br></br>
       Other rules
+      <br></br>
       These following activities are forbidden and violations will be enforced and violations may lead to various penalties according to GM discretion.
-      Harrassment of any other player after being told to stop once by any staff member. (Orange names in Discord, or in-game GMs.)
-      Any form of racism, including, but not limited to, skin color, sex or sexual orientation, religion, ethnicity, country etc.
-      Asking for information regarding players' personal (i.e. real-world) life or identity if they do not wish to disclose it.
-      Using foul language or deragatory terms in yells.
-      Insulting or humiliating other players in public chats.
-      Account sharing is not allowed. This is tracked and can easily be detected. Furthermore, if your friend cheats, you may suffer the consequences with them if they get caught. Better to be safe than sorry.
-      Not responding to GM messages while your character is not idle, as this may be an indication of botting.
-      Using third party tools or addons to gain an unfair advantage - If such a tool or addon is not on the explict allowed or disallowed list, please use common sense. If uncertain, ask a GM or administrator.
-      Market manipulation or any kind, including faux sells on the auction house for the purpose of wiping the sale history, price fixing or otherwise any means of blocking healthy competition. This is easily tracked. Beyond any type of suspension/ban that may incur, your fellow players will probably judge you pretty harshly since it isn't hard for them to figure out what's happening. Don't be that guy/girl.
-      Navmesh abuses are not allowed. A navmesh abuse is taking advantage of bugs in how mobs move to reach a position where you can hit the mob but the mob can't hit you or someone else from your party back (including healers). The rule does not apply when you're running for your life with no intention of fighting.
-      Obtaining and/or using OOE items that were left due to an oversight (OOE = Out of Era, items that were not available in the WotG era). If such items are found in circulation they will be confiscated and no refund will be given.
-      Intentionally dying shortly before conquest tally in order to hinder another nation's effort is not allowed. GMs are monitoring conquest regions and will know if that happens.
-      Knowingly aiding cheaters is an offense even if the assistance itself would not have been considered cheating otherwise. This includes helping people who have been permanently banned create and level a new character.
-      Not reporting leaked information - Should you obtain any information which is not public knowledge by unofficial means (i.e. leak) you are required to report that in a GM ticket. Should such a leak occur anyone with knowledge of the information will be penalized, even if they did not act upon it.
-      Power leveling (PL), i.e. the use of a 3rd party to gain experience faster than normal, is not prohibited by itself, however advertising or asking for such services on public channels (yells, the server Discord) is not allowed.
+      <ul>
+        <li>
+          Harrassment of any other player after being told to stop once by any staff member. (Orange names in Discord, or in-game GMs.)
+        </li>
+        <li>
+          Any form of racism, including, but not limited to, skin color, sex or sexual orientation, religion, ethnicity, country etc.
+        </li>
+        <li>
+          Asking for information regarding players' personal (i.e. real-world) life or identity if they do not wish to disclose it.
+        </li>
+        <li>
+          Using foul language or deragatory terms in yells.
+        </li>
+        <li>
+          Insulting or humiliating other players in public chats.
+        </li>
+        <li>
+          Account sharing is not allowed. This is tracked and can easily be detected. Furthermore, if your friend cheats, you may suffer the consequences with them if they get caught. Better to be safe than sorry.
+        </li>
+        <li>
+          Not responding to GM messages while your character is not idle, as this may be an indication of botting. Using third party tools or addons to gain an unfair advantage - If such a tool or addon is not on the explict allowed or disallowed list, please use common sense. If uncertain, ask a GM or administrator.
+        </li>
+        <li>
+          Market manipulation or any kind, including faux sells on the auction house for the purpose of wiping the sale history, price fixing or otherwise any means of blocking healthy competition. This is easily tracked. Beyond any type of suspension/ban that may incur, your fellow players will probably judge you pretty harshly since it isn't hard for them to figure out what's happening. Don't be that guy/girl.
+        </li>
+        <li>
+          Navmesh abuses are not allowed. A navmesh abuse is taking advantage of bugs in how mobs move to reach a position where you can hit the mob but the mob can't hit you or someone else from your party back (including healers). The rule does not apply when you're running for your life with no intention of fighting.
+        </li>
+        <li>
+          Obtaining and/or using OOE items that were left due to an oversight (OOE = Out of Era, items that were not available in the WotG era). If such items are found in circulation they will be confiscated and no refund will be given.
+        </li>
+        <li>
+          Intentionally dying shortly before conquest tally in order to hinder another nation's effort is not allowed. GMs are monitoring conquest regions and will know if that happens.
+        </li>
+        <li>
+          Knowingly aiding cheaters is an offense even if the assistance itself would not have been considered cheating otherwise. This includes helping people who have been permanently banned create and level a new character.
+        </li>
+        <li>
+          Not reporting leaked information - Should you obtain any information which is not public knowledge by unofficial means (i.e. leak) you are required to report that in a GM ticket. Should such a leak occur anyone with knowledge of the information will be penalized, even if they did not act upon it.
+        </li>
+        <li>
+          Power leveling (PL), i.e. the use of a 3rd party to gain experience faster than normal, is not prohibited by itself, however advertising or asking for such services on public channels (yells, the server Discord) is not allowed.
+        </li>
+      </ul>
       Mordion Gaol (AKA Jail)
-      You may end up in Mordion Gaol either manually by a GM or by an automated jailing system designed to detect and take action against known cheating methods.
-      If you were jailed by a GM, they are likely to show up and talk to you. Answer all questions honestly, as they have access to logs and can verify your claims.
-      If you were jailed by the automated cheat detection system, you will see an NPC named "Read Me", please speak with it in order to find out what to do next.
-      In either case, please be aware that our logging keeps very detailed track of player actions. These will need to be manually reviewed by the GM team and may take some time to review as a group before coming to a decision.
-      Do not immediately disconnect if you're jailed. If you disconnect immediately, the staff will not be able to easily get a hold of you. Furthermore, disconnecting immediately after being sent to jail is a pretty obvious sign that you have something to hide. If you need to log out before a GM speaks with you, put in a GM ticket on Discord to let someone know you're in Mordion before you log off including your full character name and what you were doing at the time you were dragged to Mordion.
+      <ul>
+        <li>
+          You may end up in Mordion Gaol either manually by a GM or by an automated jailing system designed to detect and take action against known cheating methods.
+        </li>
+        <li>
+          If you were jailed by a GM, they are likely to show up and talk to you. Answer all questions honestly, as they have access to logs and can verify your claims.
+        </li>
+        <li>
+          If you were jailed by the automated cheat detection system, you will see an NPC named "Read Me", please speak with it in order to find out what to do next.
+        </li>
+        <li>
+          In either case, please be aware that our logging keeps very detailed track of player actions. These will need to be manually reviewed by the GM team and may take some time to review as a group before coming to a decision.
+        </li>
+        <li>
+          Do not immediately disconnect if you're jailed. If you disconnect immediately, the staff will not be able to easily get a hold of you. Furthermore, disconnecting immediately after being sent to jail is a pretty obvious sign that you have something to hide. If you need to log out before a GM speaks with you, put in a GM ticket on Discord to let someone know you're in Mordion before you log off including your full character name and what you were doing at the time you were dragged to Mordion.
+        </li>
+      </ul>
       Yells
+      <br />
+      <br />
       The /yell command is a server-wide command. To prevent abuse, its use is limited to once every 15 minutes.
       In order to avoid too many irrelevant yells, the use of yells is limited to certain purposes, described below.
       Any misuse of the yell command may lead to a mute (i.e. denial of the ability to use the yell command) for a period of time which begins in one week and increases after each repeat offense, eventually becoming permanent. Severe cases (e.g. racism) may result in an immediate permanent mute.
       By default the use of the yell command is disabled. Players are required to read and agree to these rules, including the lists of allowed and disallowed purposes below, before they can use the yell command. If you agree to the rules type "!yell iagree" in the in-game chat to enable use of the yell command.
 
       Allowed:
-      Commerce (Want to buy/sell/trade) items, teleports, mercenery services etc (exception: paid power leveling is not allowed, see above).
-      Parties (looking for party/looking for members)
-      Linkshells (looking for LS/looking for members)
-      Asking for help / offering help
-      Asking game related questions
+      <ul>
+        <li>
+          Commerce (Want to buy/sell/trade) items, teleports, mercenery services etc (exception: paid power leveling is not allowed, see above).</li>
+        <li>
+          Parties (looking for party/looking for members)
+        </li>
+        <li>
+          Linkshells (looking for LS/looking for members)
+        </li>
+        <li>
+          Asking for help / offering help
+        </li>
+        <li>
+          Asking game related questions
+        </li>
+      </ul>
       Not allowed:
-      Spamming
-      Any offensive language, including random insults
-      Offering services that violate the rules
-      Offering or asking for paid power leveling services
-      Replying to quetions that have already been answered
-      Random chatting
-      Asking for GM help more than once
-      Any non-FFXI related talk
+      <br />
+      <ul>
+        <li>
+          Spamming
+        </li>
+        <li>
+          Any offensive language, including random insults
+        </li>
+        <li>
+          Offering services that violate the rules
+        </li>
+        <li>
+          Offering or asking for paid power leveling services
+        </li>
+        <li>
+          Replying to quetions that have already been answered
+        </li>
+        <li>
+          Random chatting
+        </li>
+        <li>
+          Asking for GM help more than once
+        </li>
+        <li>
+          Any non-FFXI related talk
+        </li>
+      </ul>
       Addons / Plugins
+      <br />
       While most servers have a specific list of allowed/disallowed Ashita / Windower addons to use, we find it easier to instead list out the types of addons that are not allowed, and then point out any specific ones as a reference. If you think an addon you would like to use may potentially be against the general rules, please reach out to a staff member in Discord by making a GM ticket and ask befor using it. Claiming that "it wasn't specifically listed on the rules page" is not an acceptable excuse to use these addons.
-      Auction house addons of any kind are not allowed. This includes any addon that either allows you to open the auction house from anywhere except an auction counter, or any addon that interacts with the auction house in any way. This includes auction scanners, listers, etc. Exception: InstaAH or any Windower equivalent are allowed as long as they do not do anything other than remove the delay.
-      Targeting addons. This includes addons similar to SetTarget. The use of Shorthand for target claiming is also not allowed, and is easily trackable.
-      Any position or speed hack. The server is set up to detect these automatically and the use of them will likely trigger the autojail feature.
-      Any automation that involves crafting, fishing or gathering. This should be a self explanatory rule.
-      Healbot. While this likely won't be as much of an issue due to there being no dual boxing, anyone found to be using an addon that automates actions will be banned.
+      <ul>
+        <li>
+          Auction house addons of any kind are not allowed. This includes any addon that either allows you to open the auction house from anywhere except an auction counter, or any addon that interacts with the auction house in any way. This includes auction scanners, listers, etc. Exception: InstaAH or any Windower equivalent are allowed as long as they do not do anything other than remove the delay.
+        </li>
+        <li>
+          Targeting addons. This includes addons similar to SetTarget. The use of Shorthand for target claiming is also not allowed, and is easily trackable.
+        </li>
+        <li>
+          Any position or speed hack. The server is set up to detect these automatically and the use of them will likely trigger the autojail feature.
+        </li>
+        <li>
+          Healbot. While this likely won't be as much of an issue due to there being no dual boxing, anyone found to be using an addon that automates actions will be banned.
+        </li>
+      </ul>
       Note: Ashitacast and Gearswap ARE allowed but only for the purpose of changing gear. These addons serve a similar function to what in-game macros can accomplish and thus have been approved for use. Happy swapping.
+      <br />
       GMs / Staff
-      Remember that when interacting with staff members, you are expected to handle yourself respectfully and appropriately. All of our staff members are offering their help to the server often at the expense of their own play time, and they're all adults with families, jobs, and other responsibilities. There may sometimes be a delay in their ability to help you with an issue due to this. Being rude to staff who are trying to help you is a surefire way to not be helped again in the future. Please treat our volunteers with the respect that they deserve for helping deliver something that you enjoy so much.
-      If you are having an issue, DO NOT reach out to a staff member via Discord DMs or in-game on their player characters (which have no GM permissions and therefore cannot help you). The correct course of action is to use the Discord GM ticketing system.
-      Keep in mind that the only people who can help you with server-related issues are Game Masters and Staff Members. These people are brown and orange names in Discord. Any other people in Discord with colored names are likely community support specialists who provide value to the server in various ways that do not include Game Master responsibilities. Please do not reach out to those people asking for Game Master related isues.
-      Do not contact developers regarding GM issues, since not all developers are Game Masters (in fact most of them are not) and not all Game Masters are developers. Any issues that affect you specifically should be reported using the Discord ticketing system. Any issues that affect the entire server should be reported on the project bugtracker.
-      The Game Masters are trusted to exercise their best discretion when helping players. This means that the GM that is helping you with your ticket may not handle it exactly the same way that a previous GM may have. If you have an issue with how a situation was handled, feel free to open a new ticket and a different member of staff can verify that things were handled appropriately.
-      Game Masters will not intervene in situations that can be remedied via the use of the blacklist function, however Game Masters may step in if harassment escalates beyond a point at which a player cannot simply "block and move on." This includes targetted harassment of a player via in-game griefing, MPK, abuse of the mail system, etc. This does not extend to things like economic competition, NM camping, etc.
-      Game Masters will not intervene if a player's actions do not violate the rules, even if they are "not nice". Please read the rules and verify that the player is indeed in violation before reporting them.
-      Game Masters will not intervene in cases where a glitch occurs as a result of user error or incorrect addons/versions causing issues, e.g. cutscenes hanging, in-game messages being incorrect, etc. GMs will advise you to download the Wings installation and try again.
-      Game Masters will usually not intervene in cases where a self-service function is available, such as not being able to move (use !unstuck) or password resets. If you believe your case is an exception please describe in your GM ticket why the self-service option did not help.
+      <ul>
+        <li>
+          Remember that when interacting with staff members, you are expected to handle yourself respectfully and appropriately. All of our staff members are offering their help to the server often at the expense of their own play time, and they're all adults with families, jobs, and other responsibilities. There may sometimes be a delay in their ability to help you with an issue due to this. Being rude to staff who are trying to help you is a surefire way to not be helped again in the future. Please treat our volunteers with the respect that they deserve for helping deliver something that you enjoy so much.
+        </li>
+        <li>
+          If you are having an issue, DO NOT reach out to a staff member via Discord DMs or in-game on their player characters (which have no GM permissions and therefore cannot help you). The correct course of action is to use the Discord GM ticketing system.
+        </li>
+        <li>
+          If you are having an issue, DO NOT reach out to a staff member via Discord DMs or in-game on their player characters (which have no GM permissions and therefore cannot help you). The correct course of action is to use the Discord GM ticketing system.
+        </li>
+        <li>
+          Keep in mind that the only people who can help you with server-related issues are Game Masters and Staff Members. These people are brown and orange names in Discord. Any other people in Discord with colored names are likely community support specialists who provide value to the server in various ways that do not include Game Master responsibilities. Please do not reach out to those people asking for Game Master related isues.
+        </li>
+        <li>
+          Do not contact developers regarding GM issues, since not all developers are Game Masters (in fact most of them are not) and not all Game Masters are developers. Any issues that affect you specifically should be reported using the Discord ticketing system. Any issues that affect the entire server should be reported on the project bugtracker.
+        </li>
+        <li>
+          The Game Masters are trusted to exercise their best discretion when helping players. This means that the GM that is helping you with your ticket may not handle it exactly the same way that a previous GM may have. If you have an issue with how a situation was handled, feel free to open a new ticket and a different member of staff can verify that things were handled appropriately.
+        </li>
+        <li>
+          Game Masters will not intervene in situations that can be remedied via the use of the blacklist function, however Game Masters may step in if harassment escalates beyond a point at which a player cannot simply "block and move on." This includes targetted harassment of a player via in-game griefing, MPK, abuse of the mail system, etc. This does not extend to things like economic competition, NM camping, etc.
+        </li>
+        <li>
+          Game Masters will not intervene if a player's actions do not violate the rules, even if they are "not nice". Please read the rules and verify that the player is indeed in violation before reporting them.
+        </li>
+        <li>
+          Game Masters will not intervene in cases where a glitch occurs as a result of user error or incorrect addons/versions causing issues, e.g. cutscenes hanging, in-game messages being incorrect, etc. GMs will advise you to download the Wings installation and try again.
+        </li>
+        <li>
+          Game Masters will usually not intervene in cases where a self-service function is available, such as not being able to move (use !unstuck) or password resets. If you believe your case is an exception please describe in your GM ticket why the self-service option did not help.
+        </li>
+      </ul>
       Terms of Service
+      <br></br>
       By playing on Wings you agree to the following:
-      Wings (hereof known as "the service") is a free of charge service provided on an "AS IS" basis without any warranty, guarantee or liability.
-      The service operators (including, but not limited to, server administrators, game masters, developers, testers and other contributors) will not be held liable for any damage, either explicit or implicit, incurred as a result of using the service by anyone, under any circumstances, even if advised of such a possibility beforehand.
-      Final Fantasy XI, Final Fantasy, Wings of the Goddess and related terms are trademarks of Square-Enix LTD. Final Fantasy XI is © Square-Enix LTD.
-      The "Wings" service operators are not affiliated with Square-Enix LTD in any way. If Square-Enix LTD or its authorized representatives request the shut-down of the service, the service opeators will comply immediately.
-      The service operators are not required to keep the service online for any time period or at all.
-      The service is subject to the laws of France, Germany and the European Union.
-      The operators do their best to keep the service secure, however even if a security breach does occur, the operators will not be held liable for any damages, even if advised of such a possibility beforehand.
-      The use of this service is a privilege, not a right. The operators reserve the right to remove anyone from the service for any reason, with or without warning, at their sole discretion.
-      Players are required to remain in compliance with all rules mentioned in this page.
-      The following data collection and usage policy and chat logging policy are a part of these terms of agreements.
+      <ul>
+        <li>
+          Wings (hereof known as "the service") is a free of charge service provided on an "AS IS" basis without any warranty, guarantee or liability.
+        </li>
+        <li>
+          The service operators (including, but not limited to, server administrators, game masters, developers, testers and other contributors) will not be held liable for any damage, either explicit or implicit, incurred as a result of using the service by anyone, under any circumstances, even if advised of such a possibility beforehand.
+        </li>
+        <li>
+          Final Fantasy XI, Final Fantasy, Wings of the Goddess and related terms are trademarks of Square-Enix LTD. Final Fantasy XI is © Square-Enix LTD.
+        </li>
+        <li>
+          The "Wings" service operators are not affiliated with Square-Enix LTD in any way. If Square-Enix LTD or its authorized representatives request the shut-down of the service, the service opeators will comply immediately.
+        </li>
+        <li>
+          The service operators are not required to keep the service online for any time period or at all.
+        </li>
+        <li>
+          The service is subject to the laws of France, Germany and the European Union.
+        </li>
+        <li>
+          The operators do their best to keep the service secure, however even if a security breach does occur, the operators will not be held liable for any damages, even if advised of such a possibility beforehand.
+        </li>
+        <li>
+          The use of this service is a privilege, not a right. The operators reserve the right to remove anyone from the service for any reason, with or without warning, at their sole discretion.
+        </li>
+        <li>
+          Players are required to remain in compliance with all rules mentioned in this page.
+        </li>
+        <li>
+          The following data collection and usage policy and chat logging policy are a part of these terms of agreements.
+        </li>
+      </ul>
       Data collection and usage policy
+      <br />
       As part of the server's operation, we collect various information regarding users. By registering and playing you agree to the collection of the following information:
-      All data provided as part of your registration, including your username and email address. We keep track of the initial email address used for registration even if changed later.
-      Login dates and origiating IP addresses to both the website and the game are logged. This is used to detect account-sharing, dual-boxing and attempted re-registrations of players banned in the past.
-      Email addresses collected will be used to send email verifications for signing-up to the service (AKA activation), for resetting forgotten passwords, in case GMs wish to validate the identity of users and for important announcements. The addresses will not be shared with any 3rd parties unless required by law.
-      In-game trading is logged, including use of the auction house, bazaar sales and trades between players in order to detect and prevent fraud and help to revert situations where such cases occur.
-      The use of certain "self service" server commands (such as !unstuck) is logged in order to prevent them from being abused for purposes other than intended.
-      Any cheating incidents are logged and tracked by both automatic processes and manually by GMs. Administrators and GMs keep track and share information regarding suspected cheating and rule violations among themselves, including the names of characters invloved.
-      The website uses cookies to facilitate its normal operation and for usage analytics.
-      The collected information will not be shared with 3rd parties except for standard web analytic services. Personally identifying information will not be shared with 3rd parties unless required by law.
-      If the operators of the service decide to cease the operation of the service on their own accord, they may transfer the user and character data to a 3rd party who wishes to create a similar service. In such case you will have the right to be excluded from the transfer.
+      <ul>
+        <li>
+          All data provided as part of your registration, including your username and email address. We keep track of the initial email address used for registration even if changed later.
+        </li>
+        <li>
+          Login dates and origiating IP addresses to both the website and the game are logged. This is used to detect account-sharing, dual-boxing and attempted re-registrations of players banned in the past.
+        </li>
+        <li>
+          Email addresses collected will be used to send email verifications for signing-up to the service (AKA activation), for resetting forgotten passwords, in case GMs wish to validate the identity of users and for important announcements. The addresses will not be shared with any 3rd parties unless required by law.
+        </li>
+        <li>
+          In-game trading is logged, including use of the auction house, bazaar sales and trades between players in order to detect and prevent fraud and help to revert situations where such cases occur.
+        </li>
+        <li>
+          The use of certain "self service" server commands (such as !unstuck) is logged in order to prevent them from being abused for purposes other than intended.
+        </li>
+        <li>
+          Any cheating incidents are logged and tracked by both automatic processes and manually by GMs. Administrators and GMs keep track and share information regarding suspected cheating and rule violations among themselves, including the names of characters invloved.
+        </li>
+        <li>
+          The website uses cookies to facilitate its normal operation and for usage analytics.
+        </li>
+        <li>
+          The collected information will not be shared with 3rd parties except for standard web analytic services. Personally identifying information will not be shared with 3rd parties unless required by law.
+        </li>
+        <li>
+          If the operators of the service decide to cease the operation of the service on their own accord, they may transfer the user and character data to a 3rd party who wishes to create a similar service. In such case you will have the right to be excluded from the transfer.
+        </li>
+      </ul>
       Chat logging policy
+      <br />
       The in-game chat feature may be logged and monitored, subject to the following policy:
-      Messages sent to all players connected to the server, such as yells and system messages, are always logged and are not subject to the rest of this policy.
-      Non-serverwide messages are not logged by default but senior GMs may enable logging of chat messages on a player or linkshell basis.
-      If logging is enabled for a specific player, all messages sent and received by that player will be logged. This includes area messages (e.g. say) that the player happened to hear.
-      If logingg is enabled for a linkshell, all messages going through that linkshell will be logged, however this will not be extended to messages sent by members in other channels.
-      Senior GMs may enable logging for a person or linkshell if they have reason to believe a violation of the rules is taking place. Monitored chat messages will only be viewed by senior GMs.
-      In addition, logging may be enabled, at GMs' discretion, by players' request in order to handle certain tickets, such as serious harassment cases.
-      Logged chat messages will not be shared with any 3rd parties unless required by law.
-      Exception to the above rule: In case of an indication of a potential serious real-life crime, the service operators reserve the right to voluntarily disclose the logs to law enforcement.
-      Logs will be deleted once the incident which prompted the logging has been resolved, regardless of whether an action has been taken or not.
+      <ul>
+        <li>
+          Messages sent to all players connected to the server, such as yells and system messages, are always logged and are not subject to the rest of this policy.
+        </li>
+        <li>
+          Non-serverwide messages are not logged by default but senior GMs may enable logging of chat messages on a player or linkshell basis.
+        </li>
+        <li>
+          If logging is enabled for a specific player, all messages sent and received by that player will be logged. This includes area messages (e.g. say) that the player happened to hear.
+        </li>
+        <li>
+          If logingg is enabled for a linkshell, all messages going through that linkshell will be logged, however this will not be extended to messages sent by members in other channels.
+        </li>
+        <li>
+          Senior GMs may enable logging for a person or linkshell if they have reason to believe a violation of the rules is taking place. Monitored chat messages will only be viewed by senior GMs.
+        </li>
+        <li>
+          In addition, logging may be enabled, at GMs' discretion, by players' request in order to handle certain tickets, such as serious harassment cases.
+        </li>
+        <li>
+          Logged chat messages will not be shared with any 3rd parties unless required by law.
+        </li>
+        <li>
+          Exception to the above rule: In case of an indication of a potential serious real-life crime, the service operators reserve the right to voluntarily disclose the logs to law enforcement.
+        </li>
+        <li>
+          Logs will be deleted once the incident which prompted the logging has been resolved, regardless of whether an action has been taken or not.
+        </li>
+      </ul>
     </>
   },
   HowtoConnect: {

@@ -12,5 +12,6 @@ const styles = {
   contentWrapper: {
     width: '80%',
     margin: '100px auto 0px auto',
+    paddingBottom: '50px'
   }
 };

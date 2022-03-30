@@ -50,7 +50,8 @@ const styles = {
   miniNavTabs: {
     display: 'inline-flex',
     gap: 25,
-    width: '100%',
+    width: '90%',
+    margin: 'auto auto',
     justifyContent: 'space-between'
   },
   miniNavHeaders: {
