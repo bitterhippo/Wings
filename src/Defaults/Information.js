@@ -3,6 +3,8 @@ import React from 'react';
 export const InformationDefaults = {
   ServerInformation: {
     data: <>
+      <br />
+      <br />
       This is a basic run-down of our server settings, as well as a brief explanation to any custom changes made to the server that deviate from normal era. You may find additional answers to questions in our FAQ, otherwise ask in our Discord.
       <br />
       <br />
