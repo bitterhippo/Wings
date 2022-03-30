@@ -24,32 +24,32 @@ export const InformationDefaults = {
       <b>Crafting Myth:</b> Removed.<br />
       <br />
       <br />
-      Yell: Enabled globally on a 15 minute cooldown.
-      Linkshell Concierge: Enabled. The Linkshell Concierge NPCs are NPCs that will allow recruiting linkshells (aka guilds) and new players to meet. Linkshell owners can speak to these NPCs and add linkpearls to them to hand out, and new players can use these NPCs to browse and join a new guild. If you're just starting out and want some new friends, try out the Linkshell Concierge! See this page to find your nearest Linkshell Concierge.
-      Maps: Characters automatically start with all maps unlocked.
+      <b>Yell</b>: Enabled globally on a 15 minute cooldown.<br />
+      <b>Linkshell Concierge</b>: Enabled. The Linkshell Concierge NPCs are NPCs that will allow recruiting linkshells (aka guilds) and new players to meet. Linkshell owners can speak to these NPCs and add linkpearls to them to hand out, and new players can use these NPCs to browse and join a new guild. If you're just starting out and want some new friends, try out the Linkshell Concierge! See this page to find your nearest Linkshell Concierge.<br />
+      <b>Maps</b>: Characters automatically start with all maps unlocked.
       Chocobo Quest: Current retail wait times (1 real-life minute between feeding the chocobo for Chocobo's Wounds quest).
       Dynamis Lockout: 71 Hours. (Changed from era's 72 hour lockout.)
-      ??? Respawns: 5 Minutes.
-      HNMs: Ground kings (wyrms, adamantoise, and behemoth) will be spawned using spawned items gained from KSNM99 battles with their corresponding NQ versions. All other NMs will remain in their normal spawn locations.
-      RMT Changes: RMT changes have been reverted and moved to their original locations for the following items. This means no versions of the following drop from corresponding battlefiends.
-      Cross-Counters (Western Shadow)
-      Eurytos’s Bow (Eastern Shadow)
-      Leaping Boots (Leaping Lizzy)
-      Ochiudo’s Kote (Mee Deggi the Punisher)
-      Fuma Kyahan (Quu Domi the Gallant)
-      Peacock Charm (Argus)
-      Speed Belt (King Arthro)
-      Healing Staff (Roc)
-      Strider Boots (Simurgh)
-      Archer’s Ring (Stroper Chyme)
-      Kraken Club (Lord of Onzozo)
-      Astral Ring (Coffer chests in Castle of Oztroja)
-      Emperor's Hairpin (Valkurm Emperor)
-      Loot: Chests and Coffers are instant repops to allow access to quest items for players. Players who open coffers or chests for loot will incur a 30-minute zone-wide illusion timer that will not allow them to open another coffer or chest to gain loot until the illusion timer wears off.
-
-      Beastmaster: All high quality versions of Beastmaster jug pets have had their level cap raised to level 75. Normal quality versions retain their normal level caps.
-
-      Crossbow Bolts / Wooden Arrow: All jobs are able to equip, primarily for THF's benefit since it has no low level Marksmanship ammo.
+      ??? Respawns: 5 Minutes. <br />
+      <b>HNMs</b>: Ground kings (wyrms, adamantoise, and behemoth) will be spawned using spawned items gained from KSNM99 battles with their corresponding NQ versions. All other NMs will remain in their normal spawn locations. <br />
+      <b>RMT Changes</b>: RMT changes have been reverted and moved to their original locations for the following items. This means no versions of the following drop from corresponding battlefiends. <br />
+      <ul>
+        <li>Cross-Counters (Western Shadow)</li>
+        <li>Eurytos’s Bow (Eastern Shadow)</li>
+        <li>Leaping Boots (Leaping Lizzy)</li>
+        <li>Ochiudo’s Kote (Mee Deggi the Punisher)</li>
+        <li>Fuma Kyahan (Quu Domi the Gallant)</li>
+        <li>Peacock Charm (Argus)</li>
+        <li>Speed Belt (King Arthro)</li>
+        <li>Healing Staff (Roc)</li>
+        <li>Strider Boots (Simurgh)</li>
+        <li>Archer’s Ring (Stroper Chyme)</li>
+        <li>Kraken Club (Lord of Onzozo)</li>
+        <li>Astral Ring (Coffer chests in Castle of Oztroja)</li>
+        <li>Emperor's Hairpin (Valkurm Emperor)</li>
+      </ul>
+      <b>Loot</b>: Chests and Coffers are instant repops to allow access to quest items for players. Players who open coffers or chests for loot will incur a 30-minute zone-wide illusion timer that will not allow them to open another coffer or chest to gain loot until the illusion timer wears off.<br />
+      <b>Beastmaster</b>: All high quality versions of Beastmaster jug pets have had their level cap raised to level 75. Normal quality versions retain their normal level caps.
+      <b>Crossbow Bolts / Wooden Arrow</b>: All jobs are able to equip, primarily for THF's benefit since it has no low level Marksmanship ammo.
     </>
   },
   Rules: {

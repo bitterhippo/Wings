@@ -21,7 +21,7 @@ export const Information = () => {
   ];
 
   return (
-    <div>
+    <ContentWrapper>
       <div style={styles.miniNavTabs}>
         {
           miniNavDefaults.map(currentItem =>
@@ -37,19 +37,21 @@ export const Information = () => {
             </div>)
         }
       </div>
-      <div>
+      <>
         {
           InformationDefaults[selected.split(" ").join("")].data
         }
-      </div>
-    </div>
+      </>
+    </ContentWrapper>
   )
 };
 
 const styles = {
   miniNavTabs: {
     display: 'inline-flex',
-    gap: 25
+    gap: 25,
+    width: '100%',
+    justifyContent: 'space-between'
   },
   miniNavHeaders: {
     fontSize: 20,
