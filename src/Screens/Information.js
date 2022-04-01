@@ -8,23 +8,6 @@ import Colors from '../Components/Colors';
 export const Information = () => {
 
   const [selected, setSelected] = useState('Server Information');
-  const [showButton, setShowButton] = useState(false);
-
-  const handleScrollUp = () => {
-    window.scrollTo({ left: 0, top: 0, behaviour: 'smooth' })
-  }
-
-  const handleButtonVisibility = () => {
-    const position = window.pageYOffset;
-    
-    position > 150 ? setShowButton(true) : setShowButton(false);
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleButtonVisibility)
-  });
-
-  console.log(showButton)
 
   //Defaults
   const miniNavDefaults = [
@@ -57,15 +40,6 @@ export const Information = () => {
           InformationDefaults[selected.split(" ").join("")].data
         }
       </>
-      {/*       Scroll to top button          */}
-      <button
-        style={{ 
-          ...styles.scrollButton, 
-          display: showButton ? 'block' : 'none'
-         }}
-        onClick={() => handleScrollUp()}>
-        To Top
-      </button>
     </ContentWrapper>
   )
 };
@@ -82,15 +56,5 @@ const styles = {
     fontSize: 20,
     color: Colors.AshBlack,
     cursor: 'pointer'
-  },
-  scrollButton: {
-    backgroundColor: `${Colors.AshBlack}`,
-    color: `${Colors.WhiteSilver}`,
-    display: 'none',
-    position: 'fixed',
-    bottom: '5%',
-    right: '5%',
-    zIndex: 1,
-    boxShadow: `2px 2px 5px ${Colors.AshBlack}`
   }
 };
