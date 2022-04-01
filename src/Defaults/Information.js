@@ -96,7 +96,7 @@ export const InformationDefaults = {
         </li>
       </ul>
       <br></br>
-      Other rules
+      <b>Other rules</b>
       <br></br>
       These following activities are forbidden and violations will be enforced and violations may lead to various penalties according to GM discretion.
       <ul>
@@ -143,7 +143,7 @@ export const InformationDefaults = {
           Power leveling (PL), i.e. the use of a 3rd party to gain experience faster than normal, is not prohibited by itself, however advertising or asking for such services on public channels (yells, the server Discord) is not allowed.
         </li>
       </ul>
-      Mordion Gaol (AKA Jail)
+      <b>Mordion Gaol (AKA Jail)</b>
       <ul>
         <li>
           You may end up in Mordion Gaol either manually by a GM or by an automated jailing system designed to detect and take action against known cheating methods.
@@ -161,7 +161,7 @@ export const InformationDefaults = {
           Do not immediately disconnect if you're jailed. If you disconnect immediately, the staff will not be able to easily get a hold of you. Furthermore, disconnecting immediately after being sent to jail is a pretty obvious sign that you have something to hide. If you need to log out before a GM speaks with you, put in a GM ticket on Discord to let someone know you're in Mordion before you log off including your full character name and what you were doing at the time you were dragged to Mordion.
         </li>
       </ul>
-      Yells
+      <b>Yells</b>
       <br />
       <br />
       The /yell command is a server-wide command. To prevent abuse, its use is limited to once every 15 minutes.
@@ -214,7 +214,7 @@ export const InformationDefaults = {
           Any non-FFXI related talk
         </li>
       </ul>
-      Addons / Plugins
+      <b>Addons / Plugins</b>
       <br />
       While most servers have a specific list of allowed/disallowed Ashita / Windower addons to use, we find it easier to instead list out the types of addons that are not allowed, and then point out any specific ones as a reference. If you think an addon you would like to use may potentially be against the general rules, please reach out to a staff member in Discord by making a GM ticket and ask befor using it. Claiming that "it wasn't specifically listed on the rules page" is not an acceptable excuse to use these addons.
       <ul>
@@ -231,9 +231,9 @@ export const InformationDefaults = {
           Healbot. While this likely won't be as much of an issue due to there being no dual boxing, anyone found to be using an addon that automates actions will be banned.
         </li>
       </ul>
-      Note: Ashitacast and Gearswap ARE allowed but only for the purpose of changing gear. These addons serve a similar function to what in-game macros can accomplish and thus have been approved for use. Happy swapping.
+      <b>Note:</b> Ashitacast and Gearswap ARE allowed but only for the purpose of changing gear. These addons serve a similar function to what in-game macros can accomplish and thus have been approved for use. Happy swapping.
       <br />
-      GMs / Staff
+      <b>GMs / Staff</b>
       <ul>
         <li>
           Remember that when interacting with staff members, you are expected to handle yourself respectfully and appropriately. All of our staff members are offering their help to the server often at the expense of their own play time, and they're all adults with families, jobs, and other responsibilities. There may sometimes be a delay in their ability to help you with an issue due to this. Being rude to staff who are trying to help you is a surefire way to not be helped again in the future. Please treat our volunteers with the respect that they deserve for helping deliver something that you enjoy so much.
@@ -254,10 +254,10 @@ export const InformationDefaults = {
           The Game Masters are trusted to exercise their best discretion when helping players. This means that the GM that is helping you with your ticket may not handle it exactly the same way that a previous GM may have. If you have an issue with how a situation was handled, feel free to open a new ticket and a different member of staff can verify that things were handled appropriately.
         </li>
         <li>
-          Game Masters will not intervene in situations that can be remedied via the use of the blacklist function, however Game Masters may step in if harassment escalates beyond a point at which a player cannot simply "block and move on." This includes targetted harassment of a player via in-game griefing, MPK, abuse of the mail system, etc. This does not extend to things like economic competition, NM camping, etc.
+          Game Masters will <b>not</b> intervene in situations that can be remedied via the use of the blacklist function, however Game Masters may step in if harassment escalates beyond a point at which a player cannot simply "block and move on." This includes targetted harassment of a player via in-game griefing, MPK, abuse of the mail system, etc. This does not extend to things like economic competition, NM camping, etc.
         </li>
         <li>
-          Game Masters will not intervene if a player's actions do not violate the rules, even if they are "not nice". Please read the rules and verify that the player is indeed in violation before reporting them.
+          Game Masters will <b>not</b> intervene if a player's actions do not violate the rules, even if they are "not nice". Please read the rules and verify that the player is indeed in violation before reporting them.
         </li>
         <li>
           Game Masters will not intervene in cases where a glitch occurs as a result of user error or incorrect addons/versions causing issues, e.g. cutscenes hanging, in-game messages being incorrect, etc. GMs will advise you to download the Wings installation and try again.
@@ -266,7 +266,7 @@ export const InformationDefaults = {
           Game Masters will usually not intervene in cases where a self-service function is available, such as not being able to move (use !unstuck) or password resets. If you believe your case is an exception please describe in your GM ticket why the self-service option did not help.
         </li>
       </ul>
-      Terms of Service
+      <b>Terms of Service</b>
       <br></br>
       By playing on Wings you agree to the following:
       <ul>
@@ -301,7 +301,7 @@ export const InformationDefaults = {
           The following data collection and usage policy and chat logging policy are a part of these terms of agreements.
         </li>
       </ul>
-      Data collection and usage policy
+      <b>Data collection and usage policy</b>
       <br />
       As part of the server's operation, we collect various information regarding users. By registering and playing you agree to the collection of the following information:
       <ul>
@@ -333,7 +333,7 @@ export const InformationDefaults = {
           If the operators of the service decide to cease the operation of the service on their own accord, they may transfer the user and character data to a 3rd party who wishes to create a similar service. In such case you will have the right to be excluded from the transfer.
         </li>
       </ul>
-      Chat logging policy
+      <b>Chat logging policy</b>
       <br />
       The in-game chat feature may be logged and monitored, subject to the following policy:
       <ul>
@@ -371,7 +371,7 @@ export const InformationDefaults = {
     data: <>
       <br />
       <br />
-      Set up
+      <b>Set up</b>
       <br />
       <br />
       If you're new here, follow these steps to get your game up and running!
@@ -406,9 +406,6 @@ export const InformationDefaults = {
     data: <>
       <br />
       <br />
-      Support
-      <br />
-      <br />
       Please select the appropriate topic:
       <br />
       <br />
@@ -438,111 +435,185 @@ export const InformationDefaults = {
   },
   FAQs: {
     data: <>
-      Frequently Asked Questions
+      <br></br>
+      <br></br>
+      <b>Frequently Asked Questions</b>
+      <br></br>
+      <br></br>
       Thanks for checking us out! This is going to be a brief bullet point styled FAQ answering many of our most frequently asked questions.
-      Account-Related
-      Can I transfer my character from ?
+      <br></br>
+      <br></br>
+      <b>Account-Related</b>
+      <br></br>
+      <br></br>
+      <b>Can I transfer my character from ?</b>
+      <br></br>
+      <br></br>
       No. We're aware that "you guys could have so many more players if you allowed transfers!" Everyone has to start fresh on Wings.
-
-      Dual boxing?
-
+      <br></br>
+      <br></br>
+      <b>Dual boxing?</b>
+      <br></br>
+      <br></br>
       No. The server only allows one account to be created per unique IP address. You may have up to 3 characters created on your account, however it is not possible to log them in simultaneously. For any household that has multiple players, please reach out to a staff member and they can assist in setting up an exception for you and your housemate.
-
-      I need an IP exception for my brother / sister / son / mother / dog / random relative living with you
-
+      <br></br>
+      <br></br>
+      <b>I need an IP exception for my brother / sister / son / mother / dog / random relative living with you</b>
+      <br></br>
+      <br></br>
       First one of you needs to already have an account. Once the first account is made, join our Discord and contact the GMs and give the username of the first account. We will tell you when you can create the second account. We usually process IP exception requests on a weekly basis so please be patient.
       * You will not get an account for your dog.
-
-      Name/Race Changes?
-
+      <br></br>
+      <br></br>
+      <b>Name/Race Changes?</b>
+      <br></br>
+      <br></br>
       No. Not now and probably not ever. If you make a bad reputation for yourself you gotta live with it or reroll. Sorry.
-
-      Gameplay Features
-      Mog Wardrobes?
+      <br></br>
+      <br></br>
+      <b>Gameplay Features</b>
+      <br></br>
+      <br></br>
+      <b>Mog Wardrobes?</b>
+      <br></br>
+      <br></br>
       Yes! To start, fresh characters will not have any Mog Wardrobe access, however as you progress thru various storylines (Nation missions, CoP, ToAU, WoTG) you will unlock more slots of "extra storage." Depending on which mission, these mission unlocks can add anywhere from 1 to 10 extra slots to your Mog Wardrobe. While we won't be revealing exactly which missions add how many slots, you will find that most rank up missions reward a moderate number of extra slots.
-
-      Gardening?
-
+      <br></br>
+      <br></br>
+      <b>Gardening?</b>
+      <br></br>
+      <br></br>
       Yes!
-
-      FoV? GoV?
-
+      <br></br>
+      <br></br>
+      <b>FoV? GoV?</b>
+      <br></br>
+      <br></br>
       FoV yes, GoV no. FoV is limited to one turn-in per Vana'diel day as it was during era.
-
-      Treasure caskets?
-
+      <br></br>
+      <br></br>
+      <b>Treasure caskets?</b>
+      <br></br>
+      <br></br>
       Yes!
-
-      Level sync?
-
+      <br></br>
+      <br></br>
+      <b>Level sync?</b>
+      <br></br>
+      <br></br>
       Yes. Level sync will remain uncapped. Items will not sync down when level sync is applied, players must wear level-appropriate equipment when level sync'd.
-
-      RMT changes?
-
+      <br></br>
+      <br></br>
+      <b>RMT changes?</b>
+      <br></br>
+      <br></br>
       Sort of. Over the course of Wings' era, many Notorious Monsters had their loot changed to R/EX versions in the open world, and Rare versions in BCNMs. Since both of those systems would technically be "in era" for us, we chose to go with a mix of both. We have reverted ALL of those NMs so that they drop the Rare versions. R/EX versions are not available ANYWHERE. Other NMs that are more endgame focused were changed to be popped NMs instead of lotto NMs (like Sozu Rogberry for Thief's Knife as an example) and will still be popped. This change is mostly relevant to Sozu Rogberry and Ullikummi, although there are other examples as well. We wanted to appeal to both types of players, those that love the thrill of the camp and those that hate camping but love to grind, and so that's the system we chose.
-
-      Era cutoff?
-
+      <br></br>
+      <br></br>
+      <b>Era cutoff?</b>
+      <br></br>
+      <br></br>
       This patch and everything before it. This was the final patch before Abyssea prepatch changes started being added.
-
-      Any specific, intentional out of era changes?
-
+      <br></br>
+      <br></br>
+      <b>Any specific, intentional out of era changes?</b>
+      <br></br>
+      <br></br>
       We use the KSNM99 system for ground kings. Players must fight KSNM99 versions of Behemoth/Adamantoise/Fafnir, then use dropped items to fight NQ version in open world. Open world versions have a chance to drop an HQ pop item for HQ version. We also raised all the HQ Beastmaster jugs to level 75 cap, and are offering access to Mog Wardrobes based on storyline progression.
       Additionally, the Chocobo license quest is 6 minutes instead of 6 real-life hours since the original wait time was painful and posed no real challenge.
       Other than these specific changes, everything else aims to be in-era.
-
-      Which jobs are available?
-
+      <br></br>
+      <br></br>
+      <b>Which jobs are available?</b>
+      <br></br>
+      <br></br>
       White Mage, Black Mage, Red Mage, Warrior, Monk, Thief, Paladin, Ranger, Dragoon, Summoner, Samurai, Ninja, Dancer, Dark Knight, Beastmaster, Bard, Corsair, Puppetmaster, Blue Mage and Scholar.
-
-      Are the auction houses linked?
-
+      <br></br>
+      <br></br>
+      <b>Are the auction houses linked?</b>
+      <br></br>
+      <br></br>
       Yep! That also includes Norg, Kazham, Aht Urghan Whitegate, etc. All auction houses are tied together.
-
-      Does this server have crafting myths enabled? (Moon phase, facing direction, etc.)
-
+      <br></br>
+      <br></br>
+      <b>Does this server have crafting myths enabled? (Moon phase, facing direction, etc.)</b>
+      <br></br>
+      <br></br>
       No. This was confirmed to be false by Square Enix and has been removed from Project Topaz completely. Face whatever direction you want, and craft whenever it suits you. It doesn't make a difference.
-
-      Random thing behaves differently than on that other server random private server.
-
+      <br></br>
+      <br></br>
+      <b>Random thing behaves differently than on that other server random private server.</b>
+      <br></br>
+      <br></br>
       We attempt to recreate the WotG era of retail, we do not copy customizations from other private servers. If something is not behaving accurately, please submit an Issue ticket so we can review it's behavior.
-
-      Is PLing allowed?
-
+      <br></br>
+      <br></br>
+      <b>Is PLing allowed?</b>
+      <br></br>
+      <br></br>
       Dual-boxing is not allowed, therefore using an alt as a PL is forbidden, however having a friend as PL is allowed. There is no xp nerf for having a PL, even if the PL gets aggro.
-
-      When does the conquest tally occur?
-
+      <br></br>
+      <br></br>
+      <b>When does the conquest tally occur?</b>
+      <br></br>
+      <br></br>
       Conquest currently happens at midnight CET (on Sundays), due to a historic technical issue. This is 6pm EST / 23:00 UTC / Monday 8:00 JST. This may be changed in the future but we make no promises either way.
-
-      I can't buy an instant warp scroll!
-
+      <br></br>
+      <br></br>
+      <b>I can't buy an instant warp scroll!</b>
+      <br></br>
+      <br></br>
       The era price of an instant warp scroll is 750CP. It has been lowered to 10CP way later but since the listed price is hardcoded in the client we cannot change it, especially if you're not using the official Wings installer. The server will display a message though. Warps were never easy and free in era and warp scrolls were mostly used in emergencies, not on an everyday basis.
-
-      I can't buy a warp ring / my warp ring doesn't work!
-
+      <br></br>
+      <br></br>
+      <b>I can't buy a warp ring / my warp ring doesn't work!</b>
+      <br></br>
+      <br></br>
       These are way out of era. Due to it being hardcoded in the client (if you're not using the official Wings installer) we cannot remove it from the list of purchasable items however you will not be able to actually purchase it. Due to an oversight a small number of players were able to purchase the item when the server just launched. While the rings were not removed from their inventories they have been disabled and are no more than a decoration now.
-
-      My homing ring doesn't work!
+      <br></br>
+      <br></br>
+      <b>My homing ring doesn't work!</b>
+      <br></br>
+      <br></br>
       The homing ring works only if both of the following conditions apply: (A) You've already ran the supply mission to the region's outpost and (B) Your nation currently has control of the region. If your nation loses control of the region you will not be able to use homing rings in that region until your nation takes control of the region again.
-
-      Why can't I pick up another FoV page!?
-
+      <br></br>
+      <br></br>
+      <b>Why can't I pick up another FoV page!?</b>
+      <br></br>
+      <br></br>
       FoV is limited to one per game day in Wings of the Goddess era. Try again next VanaDay.
-
-      Other Miscellaneous Concerns
-      I want to contribute to Wings!
+      <br></br>
+      <br></br>
+      <b>Other Miscellaneous Concerns</b>
+      <br></br>
+      <br></br>
+      <b>I want to contribute to Wings!</b>
+      <br></br>
+      <br></br>
       Visit our #contribute channel in Discord to see how you can contribute to the project.
-
-      I want to join the development of Wings!
-
+      <br></br>
+      <br></br>
+      <b>I want to join the development of Wings!</b>
+      <br></br>
+      <br></br>
       Wings is an open sourced project. We have a separate Discord for our code work, which can be found here. Our repository can be found here.
-
-      All code posted on this repository is an exact copy of the code running on the current live server!
-      Everyone can download and modify code, as well as contribute back to the official Wings project, however the server owners reserve the right to decide which changes are actually merged into the official branch.
-      Wings is licensed under the GNU AGPLv3, meaning that any other public servers built upon the Wings codebase must be open source as well.
-      Developers who contribute regularly may be given an active developer status in our Project Discord, as well as be invited to chat on official Q&A development livestreams with the staff, etc.
-      Since Wings is based on the now defunct Project Topaz, the code base is a combination of LUA, C++, and SQL.
+      <ul>
+        <li>
+          All code posted on this repository is an exact copy of the code running on the current live server!
+        </li>
+        <li>
+          Everyone can download and modify code, as well as contribute back to the official Wings project, however the server owners reserve the right to decide which changes are actually merged into the official branch.
+        </li>
+        <li>
+          Wings is licensed under the GNU AGPLv3, meaning that any other public servers built upon the Wings codebase must be open source as well.
+        </li>
+        <li>
+          Developers who contribute regularly may be given an active developer status in our Project Discord, as well as be invited to chat on official Q&A development livestreams with the staff, etc.
+        </li>
+        <li>
+          Since Wings is based on the now defunct Project Topaz, the code base is a combination of LUA, C++, and SQL.
+        </li>
+      </ul>
     </>
   }
 };
