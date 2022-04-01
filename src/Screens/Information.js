@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 //Subcomponents
 import { ContentWrapper } from '../Components/PPC/ContentWrapper';
 import { InformationDefaults } from '../Defaults/Information';
+import { MiniNav } from '../Components/MiniNav/MiniNav';
 import Colors from '../Components/Colors';
 
 export const Information = () => {
@@ -20,26 +21,14 @@ export const Information = () => {
 
   return (
     <ContentWrapper>
-      <div style={styles.miniNavTabs}>
-        {
-          miniNavDefaults.map(currentItem =>
-            <div
-              key={currentItem}
-              onClick={() => setSelected(currentItem)}
-              style={{
-                ...styles.miniNavHeaders,
-                color: selected === currentItem ? Colors.Green : Colors.AshBlack
-              }}
-            >
-              {currentItem}
-            </div>)
-        }
-      </div>
-      <>
-        {
-          InformationDefaults[selected.split(" ").join("")].data
-        }
-      </>
+      <MiniNav
+        arrayData={miniNavDefaults}
+        stateHandler={setSelected}
+        selectedNav={selected}
+      />
+      {
+        InformationDefaults[selected.split(" ").join("")].data
+      }
     </ContentWrapper>
   )
 };
