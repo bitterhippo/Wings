@@ -369,26 +369,37 @@ export const InformationDefaults = {
   },
   HowtoConnect: {
     data: <>
-      Setting Up
+      <br />
+      <br />
+      Set up
+      <br />
+      <br />
       If you're new here, follow these steps to get your game up and running!
-
-      Register your account here: Sign up page.
-      Confirm your email address in the followup email.
-      Download and install the Wings client, which can be downloaded here**: Download torrent
-      Once you have installed the client and registered your account, you're all set to play!
-
-      **You'll need a torrent application in order to download it, we generally would suggest uTorrent or BitTorrent, as these are the two most well-known programs for this. The installer comes pre-loaded with basically everything you need to get started right away!
-
+      <ul>
+        <li>Register your account here: Sign up page.</li>
+        <li>Confirm your email address in the followup email.</li>
+        <li>Download and install the Wings client, which can be downloaded here**: Download torrent</li>
+        <li>Once you have installed the client and registered your account, you're all set to play!</li>
+      </ul>
+      <i>**You'll need a torrent application in order to download it, we generally would suggest uTorrent or BitTorrent, as these are the two most well-known programs for this. The installer comes pre-loaded with basically everything you need to get started right away!</i>
+      <br />
+      <br />
       If you require additional help getting everything up and running, feel free to visit our Discord channels for #installation-help and #tech-support.
+      <br />
+      <br />
       Individual Downloads
-
+      <br />
+      <br />
       Video Tutorials
+      <br />
+      <br />
       We've also made a few video tutorials to help players get their client set up. You can also find these (and probably many more like them) in our Discord in the #video-tutorials channel.
-
-      Adjusting your settings to improve quality of life. -Gweivyth
-      Setting up Ashenbub's HD packs. -Ashenbubs
-      Switching between private servers? No problem! -Gweivyth
-      Ashita, and everything you ever wanted to know about it. -Gweivyth
+      <ul>
+        <li>Adjusting your settings to improve quality of life. -Gweivyth</li>
+        <li>Setting up Ashenbub's HD packs. -Ashenbubs</li>
+        <li>Switching between private servers? No problem! -Gweivyth</li>
+        <li>Ashita, and everything you ever wanted to know about it. -Gweivyth</li>
+      </ul>
     </>
   },
   Support: {
