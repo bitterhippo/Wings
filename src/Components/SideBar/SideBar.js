@@ -13,8 +13,10 @@ export const SideBar = () => {
         <Bubbles iconName={"LogIn"} route={"/login"}/>
         <Bubbles iconName={"SignUp"} route={"/signup"}/>
         <Bubbles iconName={"Info"} route={"/information"}/>
+        <Bubbles iconName={"Tools"} route={"/tools"}/>
         <Bubbles iconName={"Settings"} route={"/settings"} />
         <Bubbles iconName={"Community"} route={"/community"}/>
+        
       </div>
     </div>
   )

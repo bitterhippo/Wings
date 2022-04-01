@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 //Subcomponents
 import Colors from '../Colors';
-import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers } from "react-icons/fi";
+import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool } from "react-icons/fi";
 
 export const Bubbles = ({ iconName, route }) => {
 
@@ -14,6 +14,7 @@ export const Bubbles = ({ iconName, route }) => {
     SignUp: <FiUserPlus color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Info: <FiInfo color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Settings: <FiSettings color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
+    Tools: <FiTool color={selected ? Colors.Green : Colors.AshBlack} size={24}></FiTool>,
     Community: <FiUsers color={selected ? Colors.Green : Colors.AshBlack} size={24} />
   }
 

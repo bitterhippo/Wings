@@ -14,6 +14,7 @@ import { Community} from './Community';
 import { Settings } from './Settings';
 import { Information } from './Information';
 import { SignUp } from './SignUp';
+import { Tools } from './Tools';
 
 //Subcomponents
 import { MainWrapper } from '../Components/PPC/MainWrapper';
@@ -29,6 +30,7 @@ const Landing = () => {
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/information" element={<Information />} />
+          <Route path="/tools" element={<Tools />} />
           <Route path="/community" element={<Community />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
