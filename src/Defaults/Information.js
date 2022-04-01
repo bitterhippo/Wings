@@ -404,23 +404,35 @@ export const InformationDefaults = {
   },
   Support: {
     data: <>
+      <br />
+      <br />
       Support
+      <br />
+      <br />
       Please select the appropriate topic:
-
+      <br />
+      <br />
       I cannot log-in
-
+      <br />
+      <br />
       My character is stuck!
-
+      <br />
+      <br />
       The game hang, crashed or black screened during a cutscene!
-
+      <br />
+      <br />
       A player is harassing me in game!
-
+      <br />
+      <br />
       I would like to report a violation of the Wings rules or terms of service!
-
+      <br />
+      <br />
       My party list does not show up properly!
-
+      <br />
+      <br />
       I would like to report a bug!
-
+      <br />
+      <br />
       My problem is not listed or the answer was not helpful
     </>
   },
