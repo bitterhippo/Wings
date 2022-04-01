@@ -1,5 +1,8 @@
 import React from 'react';
 
+//Subcomponents
+import { StyledLink } from '../Components/PPC/Text/StyledLink';
+
 export const InformationDefaults = {
   ServerInformation: {
     data: <>
@@ -409,7 +412,7 @@ export const InformationDefaults = {
       Please select the appropriate topic:
       <br />
       <br />
-      I cannot log-in
+      <StyledLink to="/">I cannot log-in</StyledLink>
       <br />
       <br />
       My character is stuck!
