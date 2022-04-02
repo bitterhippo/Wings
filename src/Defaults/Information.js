@@ -2,6 +2,7 @@ import React from 'react';
 
 //Subcomponents
 import { StyledLink } from '../Components/PPC/Text/StyledLink';
+import { ExpandableDiv } from '../Components/Expandable/ExpandableDiv';
 
 export const InformationDefaults = {
   ServerInformation: {
@@ -412,7 +413,10 @@ export const InformationDefaults = {
       Please select the appropriate topic:
       <br />
       <br />
-      <StyledLink to="/">I cannot log-in</StyledLink>
+      <ExpandableDiv
+        text={<>I cannot log-in</>}
+        hiddenText={<>There are a number of issues that could prevent you from logging in. Here are the most frequent ones:</>}
+      />
       <br />
       <br />
       My character is stuck!
