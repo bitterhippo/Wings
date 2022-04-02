@@ -6,7 +6,7 @@ import Colors from '../Colors';
 import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
-export const Bubbles = ({ iconName, route }) => {
+export const Bubbles = ({ iconName, route, external }) => {
 
   const [selected, setSelected] = useState(false);
 
@@ -17,7 +17,7 @@ export const Bubbles = ({ iconName, route }) => {
     Settings: <FiSettings color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Tools: <FiTool color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Community: <FiUsers color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
-    Discord: <FaDiscord color={selected ? Colors.Green : Colors.AshBlack} size={24} />
+    Discord: <FaDiscord color={selected ? Colors.Green : Colors.AshBlack} size={28} />
   }
 
   return (
@@ -31,12 +31,25 @@ export const Bubbles = ({ iconName, route }) => {
       onMouseEnter={() => setSelected(!selected)}
       onMouseLeave={() => setSelected(!selected)}
     >
-      <Link to={route}>
-        <div style={styles.iconContainer}>
-          {components[iconName]}
+      {
+        !external
+          ?
+          <Link to={route}>
+            <div style={styles.iconContainer}>
+              {components[iconName]}
 
-        </div>
-      </Link>
+            </div>
+          </Link>
+          :
+          <a href={route}
+            style={styles.iconContainer}
+          >
+            <div style={styles.iconContainer}>
+              {components[iconName]}
+
+            </div>
+          </a>
+      }
       {/* Floating Text Render Condiiton */}
       <div
         style={{ ...styles.bubbleText, display: !selected ? 'none' : '' }}

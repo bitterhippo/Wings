@@ -15,7 +15,7 @@ export const SideBar = () => {
         <Bubbles iconName={"Info"} route={"/information"}/>
         <Bubbles iconName={"Tools"} route={"/tools"}/>
         <Bubbles iconName={"Settings"} route={"/settings"} />
-        <Bubbles iconName={"Discord"} route={"https://discord.com/invite/wNpVm35wbz"}/>
+        <Bubbles iconName={"Discord"} external={true} route={"https://discord.com/invite/wNpVm35wbz"}/>
       </div>
     </div>
   )
