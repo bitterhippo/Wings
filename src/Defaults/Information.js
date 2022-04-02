@@ -437,7 +437,6 @@ export const InformationDefaults = {
         </>}
       />
       <br />
-      <br />
       <ExpandableDiv
         text={<>My character is stuck!</>}
         hiddenText={
@@ -451,7 +450,6 @@ export const InformationDefaults = {
             If your character is stuck in a cutscene, you can type !release to be removed from the cutscene. Please note that use of !release may interfere with your ability to progress with quests until the cutscene is finished properly. Using this command will not incur the same penalty as the !unstuck command.
           </>}
       />
-      <br />
       <br />
       The game hang, crashed or black screened during a cutscene!
       <br />
