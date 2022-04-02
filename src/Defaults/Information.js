@@ -415,11 +415,42 @@ export const InformationDefaults = {
       <br />
       <ExpandableDiv
         text={<>I cannot log-in</>}
-        hiddenText={<>There are a number of issues that could prevent you from logging in. Here are the most frequent ones:</>}
+        hiddenText={<>
+          There are a number of issues that could prevent you from logging in. Here are the most frequent ones:
+          <ul>
+            <li>
+              If you've just signed up you must validate your account before you can log-in. Please check your e-mail and click the validation link.
+            </li>
+            <li>
+              There is already someone playing from your IP address. Wings does not allow dual-boxing, therefore once an IP address is associated with an account, no other account can log-in from the same IP address unless given an exception by a GM or an administrator. Generally we give such exceptions only in case of several people living together (e.g. family members). We do not give temporary exceptions, therefore playing from a friend's house is not possible. We will also not give an exception to IP addresses associated with VPN services.
+            </li>
+            <li>
+              You are using a VPN service. Connections from anonymizing VPN services are not allowed. Please disconnect from the VPN and try again.
+            </li>
+            <li>
+              There is a problem with the game client installation on your computer. This is probably the case if the login succeeds but the bootloader closes without launching the game. This sometimes happens when using multiple installations for different servers. You may need to reinstall the game. We generally recommend using a single installation, and either utilizing a switch batch file or XIPivot in these situations.
+            </li>
+            <li>
+              The server could be down for maintenance. Please check for any announcements on discord.
+            </li>
+          </ul>
+        </>}
       />
       <br />
       <br />
-      My character is stuck!
+      <ExpandableDiv
+        text={<>My character is stuck!</>}
+        hiddenText={
+          <>
+            If you cannot move your character or your character is stuck off map you can type the "!unstuck" command in the chat line.
+            This command will warp you to your home point after 20 minutes.
+            Please note that in order to prevent abuse of this command as free warps you will receive a terror status (your character will be unable to move or otherwise act) for 20 minutes and will only be teleported after the 20 minute wait ends. The use of this command is logged and players abusing it may receive punitive actions.
+            Due to technical limitations this command cannot be cancelled once triggered, therefore we recommend only using it as a last resort.
+            <br />
+            <br />
+            If your character is stuck in a cutscene, you can type !release to be removed from the cutscene. Please note that use of !release may interfere with your ability to progress with quests until the cutscene is finished properly. Using this command will not incur the same penalty as the !unstuck command.
+          </>}
+      />
       <br />
       <br />
       The game hang, crashed or black screened during a cutscene!

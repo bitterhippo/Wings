@@ -21,7 +21,7 @@ export const ExpandableDiv = ({ text, hiddenText }) => {
       <div
         style={styles.headerRow}
       >
-        <div>{text}</div>
+        <div style={{color: visible ? `${Colors.Crimson}` : `${Colors.AshBlack}`}}>{text}</div>
         <div style={styles.iconWrap}>{!visible
           ? <FiArrowDown size={16} color={Colors.AshBlack}/>
           : <FiArrowUp size={16} color={Colors.Crimson}/>}
