@@ -31,7 +31,7 @@ export const ContentWrapper = props => {
           display: showButton ? 'block' : 'none'
         }}
         onClick={() => handleScrollUp()}>
-        To Top
+        Top
       </button>
     </div>
   )
@@ -41,16 +41,18 @@ const styles = {
   contentWrapper: {
     width: '80%',
     margin: '100px auto 0px auto',
-    paddingBottom: '50px'
+    paddingBottom: '100px'
   },
   scrollButton: {
     backgroundColor: `${Colors.AshBlack}`,
     color: `${Colors.WhiteSilver}`,
     display: 'none',
+    height: 50,
+    width: 50,
+    borderRadius: 50,
     position: 'fixed',
     bottom: '5%',
     right: '5%',
     zIndex: 1,
-    boxShadow: `2px 2px 5px ${Colors.AshBlack}`
   }
 };

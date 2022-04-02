@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export const ToolDefaults = {
   WhoisOnline: {
@@ -6,5 +6,22 @@ export const ToolDefaults = {
       <>
         lol
       </>
+  },
+  Mentors: {
+    data: 
+    <> 
+    test
+    </>
+  },
+  PlayerSearch: {
+    data:
+      <>
+        PlayerSearch
+      </>
+  },
+  ItemSearch: {
+    data: <>
+      ItemSearch
+    </>
   }
 };

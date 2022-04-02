@@ -7,7 +7,7 @@ import { MiniNav } from '../Components/MiniNav/MiniNav';
 
 export const Tools = () => {
 
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState('Who is Online');
 
   const miniNavDefaults = [
     `Who is Online`,
