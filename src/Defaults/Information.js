@@ -416,6 +416,7 @@ export const InformationDefaults = {
       <ExpandableDiv
         text={<>I cannot log-in</>}
         hiddenText={<>
+          <br />
           There are a number of issues that could prevent you from logging in. Here are the most frequent ones:
           <ul>
             <li>
@@ -441,6 +442,7 @@ export const InformationDefaults = {
         text={<>My character is stuck!</>}
         hiddenText={
           <>
+            <br />
             If you cannot move your character or your character is stuck off map you can type the "!unstuck" command in the chat line.
             This command will warp you to your home point after 20 minutes.
             Please note that in order to prevent abuse of this command as free warps you will receive a terror status (your character will be unable to move or otherwise act) for 20 minutes and will only be teleported after the 20 minute wait ends. The use of this command is logged and players abusing it may receive punitive actions.
@@ -448,23 +450,79 @@ export const InformationDefaults = {
             <br />
             <br />
             If your character is stuck in a cutscene, you can type !release to be removed from the cutscene. Please note that use of !release may interfere with your ability to progress with quests until the cutscene is finished properly. Using this command will not incur the same penalty as the !unstuck command.
+            <br />
+            <br />
           </>}
       />
       <br />
-      The game hang, crashed or black screened during a cutscene!
+      <ExpandableDiv
+        text={<>The game is hanging, has crashed, or black screened during a cutscene!</>}
+        hiddenText={
+          <>
+            <br />
+            This is a very common issue which happens due to using an incorrect game client version. The most common examples are the mission 2-3 dragon fight and the mission 5-2 shadow lord fight (though it may happen in other cases as well). Please make sure you are either using the latest version of the Wings installer or the XiPivot addon with the latest Wings installation data files.
+            If your game is stuck during a cutscene it maybe possible to skip the cutscene by typing the "!release" command in the cat line, however this is not guaranteed to work.
+            <br />
+            <br />
+          </>}
+      />
       <br />
+      <ExpandableDiv
+        text={<>A player is harassing me in game!</>}
+        hiddenText={
+          <>
+            <br />
+            You can use the /blacklist command to block players from contacting you in-game. If you believe the issue requires GM intervention, and only after you have told the player to stop at least once, please take a screenshot of the incident and open a GM ticket. Your ticket should include a link to the screenshot (please upload it to any free image hosting sevice prior to opening the ticket).
+            <br />
+            <br />
+          </>}
+      />
       <br />
-      A player is harassing me in game!
+      <ExpandableDiv
+        text={<>I would like to report a violation of the Wings rules or terms of service!</>}
+        hiddenText={
+          <>
+            <br />
+            Please read the rules page carefully and verify that this is indeed a violation of the rules or terms of service as described. If this is indeed a violation please take a screenshot of the violation and upload it to a free image hosting service in order to be able to back your claim, as we will be not be taking action in case of one person's word against the other (innocent unless proven guilty). When contacting a GM please provide a link to the screenshot.
+            <br />
+            <br />
+          </>}
+      />
       <br />
+      <ExpandableDiv
+        text={<>My party list does not show up properly!</>}
+        hiddenText={
+          <>
+            <br />
+            Please type the "!re" command in the chat line to reload your party list.
+            <br />
+            <br />
+          </>}
+      />
       <br />
-      I would like to report a violation of the Wings rules or terms of service!
-      <br />
-      <br />
-      My party list does not show up properly!
-      <br />
-      <br />
-      I would like to report a bug!
-      <br />
+      <ExpandableDiv
+        text={<>I would like to report a bug!</>}
+        hiddenText={
+          <>
+            <br />
+            Before opening a bug report please make sure to perform the following action:
+            <ul>
+              <li>
+                Use a reliable resource such as FFXIClopedia to verify whether this is indeed a bug. By default FFXIClopedia described the behavior of the current retail version, therefore you will need to open the page history of the article and select the last edit of the page before March 2010, which is the cutoff date for Wings. If the observed behavior matches the behavior described in that edit, then it is by design.
+              </li>
+              <li>
+                Make sure you are using the latest version of the Wings installer to exclude the possibility that the bug is a client side issue. We will not be taking bug reports when an incorrect client version is used.
+              </li>
+              <li>
+                Search the bugtracker and check whether the issue has already been reported. If it has, there's no need to report it again. If you have further information to add, please add it as a comment in the existing report rather than submit a new one.
+              </li>
+            </ul>
+            Only after performing all the above checks, if it is still relevant, you can open a new issue in our bugtracker. When reporting the issue, make sure to provide your client version (type /ver in-game).
+            <br />
+            <br />
+          </>
+        }
+      />
       <br />
       My problem is not listed or the answer was not helpful
     </>
