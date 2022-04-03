@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 //Subcomponents
 import Colors from '../Colors';
+import { BackgroundImage } from '../Images/BackgroundImg';
 
 export const ContentWrapper = props => {
 
@@ -23,6 +24,7 @@ export const ContentWrapper = props => {
 
   return (
     <div style={styles.contentWrapper}>
+      <BackgroundImage />
       {props.children}
       {/*       Scroll to top button          */}
       <button
@@ -39,6 +41,7 @@ export const ContentWrapper = props => {
 
 const styles = {
   contentWrapper: {
+    position: 'relative',
     width: '80%',
     margin: '100px auto 0px auto',
     paddingBottom: '100px'
