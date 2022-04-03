@@ -524,7 +524,16 @@ export const InformationDefaults = {
         }
       />
       <br />
-      My problem is not listed or the answer was not helpful
+      <ExpandableDiv
+        text={<>My problem is not listed or the answer was not helpful </>}
+        hiddenText={
+          <>
+            <br />
+            Please contact a GM for further assistance. GM tickets are only able to be made in Discord at this time. Please follow this link to find the correct channel, and please read the instructions on the channel carefully when making your ticket.
+            <br />
+            <br />
+          </>}
+      />
     </>
   },
   FAQs: {
