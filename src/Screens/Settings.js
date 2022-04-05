@@ -1,14 +1,13 @@
 import React from 'react';
 
 //Subcomponents
-import { BackgroundImage } from '../Components/Images/BackgroundImg';
+import { ContentWrapper } from '../Components/PPC/ContentWrapper';
 
 export const Settings = () => {
   return (
-    <>
-    Settings
-    <BackgroundImage />
-    </>
+    <ContentWrapper>
+      Settings
+    </ContentWrapper>
   )
 };
 

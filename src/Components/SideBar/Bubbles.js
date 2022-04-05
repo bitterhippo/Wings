@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 
 //Subcomponents
 import Colors from '../Colors';
-import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool } from "react-icons/fi";
+import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool, FiLogOut } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
 export const Bubbles = ({ iconName, route, external }) => {
 
   const [selected, setSelected] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  //Icon Barrel
 
   const components = {
     LogIn: <FiLogIn color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
@@ -17,7 +20,8 @@ export const Bubbles = ({ iconName, route, external }) => {
     Settings: <FiSettings color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Tools: <FiTool color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Community: <FiUsers color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
-    Discord: <FaDiscord color={selected ? Colors.Green : Colors.AshBlack} size={28} />
+    Discord: <FaDiscord color={selected ? Colors.Green : Colors.AshBlack} size={28} />,
+    LogOut: <FiLogOut color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
   }
 
   return (
