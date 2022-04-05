@@ -8,22 +8,22 @@ import { Bubbles } from './Bubbles';
 
 export const SideBar = () => {
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   const loggedOutArr = [
-    { icon: "LogIn", route: "/login"},
-    { icon: "SignUp", route: "/signup"},
-    { icon: "Info", route: "/information"},
-    { icon: "Tools", route: "/tools"},
-    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz", external: true}
+    { icon: "LogIn", route: "/login" },
+    { icon: "SignUp", route: "/signup" },
+    { icon: "Info", route: "/information" },
+    { icon: "Tools", route: "/tools" },
+    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz", external: true }
   ];
 
   const loggedInArr = [
-    <Bubbles iconName={"LogIn"} route={"/login"} />,
-    <Bubbles iconName={"Info"} route={"/information"} />,
-    <Bubbles iconName={"Tools"} route={"/tools"} />,
-    <Bubbles iconName={"Settings"} route={"/settings"} />,
-    <Bubbles iconName={"Discord"} external={true} route={"https://discord.com/invite/wNpVm35wbz"} />
+    { icon: "LogOut", route: "/login" },
+    { icon: "Settings", route: "/settings" },
+    { icon: "Info", route: "/information" },
+    { icon: "Tools", route: "/tools" },
+    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz", external: true }
   ]
 
   const listRender = (list) => {
@@ -43,7 +43,8 @@ export const SideBar = () => {
 
   return (
     <div style={styles.barWrapper}>
-      { !loggedIn && listRender(loggedOutArr) }
+      {!loggedIn && listRender(loggedOutArr)}
+      {loggedIn && listRender(loggedInArr)}
     </div>
   )
 };
