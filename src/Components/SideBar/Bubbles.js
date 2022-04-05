@@ -8,8 +8,9 @@ import { FaDiscord } from "react-icons/fa";
 
 export const Bubbles = ({ iconName, route, external }) => {
 
+  console.log(external);
+
   const [selected, setSelected] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(false);
 
   //Icon Barrel
 

@@ -15,7 +15,7 @@ export const SideBar = () => {
     { icon: "SignUp", route: "/signup"},
     { icon: "Info", route: "/information"},
     { icon: "Tools", route: "/tools"},
-    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz"}
+    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz", external: true}
   ];
 
   const loggedInArr = [
@@ -34,7 +34,7 @@ export const SideBar = () => {
             key={current.route}
             iconName={current.icon}
             route={current.route}
-            external={current.external ? true : null}
+            external={current.external ? true : false}
           />)
         }
       </div>
