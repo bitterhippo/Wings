@@ -11,11 +11,11 @@ export const SideBar = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   const loggedOutArr = [
-    <Bubbles iconName={"LogIn"} route={"/login"} />,
-    <Bubbles iconName={"SignUp"} route={"/signup"} />,
-    <Bubbles iconName={"Info"} route={"/information"} />,
-    <Bubbles iconName={"Tools"} route={"/tools"} />,
-    <Bubbles iconName={"Discord"} external={true} route={"https://discord.com/invite/wNpVm35wbz"} />
+    { icon: "LogIn", route: "/login"},
+    { icon: "SignUp", route: "/signup"},
+    { icon: "Info", route: "/information"},
+    { icon: "Tools", route: "/tools"},
+    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz"}
   ];
 
   const loggedInArr = [
@@ -31,9 +31,10 @@ export const SideBar = () => {
       <div style={styles.bubbleList}>
         {
           list.map((current) => <Bubbles
-            key={current}
+            key={current.route}
             iconName={current.icon}
             route={current.route}
+            external={current.external ? true : null}
           />)
         }
       </div>
@@ -42,7 +43,7 @@ export const SideBar = () => {
 
   return (
     <div style={styles.barWrapper}>
-      { loggedIn && listRender(loggedOutArr) }
+      { !loggedIn && listRender(loggedOutArr) }
     </div>
   )
 };
