@@ -8,14 +8,14 @@ import { Bubbles } from './Bubbles';
 
 export const SideBar = () => {
 
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   const loggedOutArr = [
     { icon: "LogIn", route: "/login" },
     { icon: "SignUp", route: "/signup" },
     { icon: "Info", route: "/information" },
     { icon: "Tools", route: "/tools" },
-    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz", external: true }
+    { icon: "Discord", route: "https://discord.com/invite/wNpVm35wbz", external: true }
   ];
 
   const loggedInArr = [
@@ -23,7 +23,7 @@ export const SideBar = () => {
     { icon: "Settings", route: "/settings" },
     { icon: "Info", route: "/information" },
     { icon: "Tools", route: "/tools" },
-    { icon: "Discord", route: "/https://discord.com/invite/wNpVm35wbz", external: true }
+    { icon: "Discord", route: "https://discord.com/invite/wNpVm35wbz", external: true }
   ]
 
   const listRender = (list) => {
