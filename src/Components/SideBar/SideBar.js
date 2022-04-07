@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Colors from '../Colors';
 import { Bubbles } from './Bubbles';
 import { BubbleDrawer } from './BubbleDrawer';
+import { SelectedWrapper } from '../PPC/SelectedWrapper';
 
 //Subcomponents
 
@@ -36,7 +37,15 @@ export const SideBar = () => {
       drawer:
         <BubbleDrawer
           header={"Info"}
-          content={<>test</>}
+          content={
+            <>
+              <SelectedWrapper>Server Information</SelectedWrapper>
+              <SelectedWrapper>Rules</SelectedWrapper>
+              <SelectedWrapper>How to Connect</SelectedWrapper>
+              <SelectedWrapper>FAQs</SelectedWrapper>
+              <SelectedWrapper>Support</SelectedWrapper>
+            </>
+          }
         />
     },
     {

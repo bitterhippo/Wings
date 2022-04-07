@@ -9,7 +9,9 @@ export const BubbleDrawer = ({ content, header }) => {
       <span style={styles.bubbleDrawerHeader}>
         {header}
       </span>
-      { content }
+      {
+        content
+      }
     </div>
   )
 };

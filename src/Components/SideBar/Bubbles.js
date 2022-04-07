@@ -89,7 +89,7 @@ const styles = {
     zIndex: 1,
     border: `1px solid ${Colors.DeepBlack}`,
     padding: '3px 5px',
-    minWidth: '100px',
+    minWidth: '80px',
     marginTop: '10px',
     borderRadius: '5px',
     left: '83%'
