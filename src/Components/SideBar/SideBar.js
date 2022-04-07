@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 //Subcomponents
 import Colors from '../Colors';
 import { Bubbles } from './Bubbles';
+import { BubbleDrawer } from './BubbleDrawer';
 
 //Subcomponents
 
@@ -13,19 +14,49 @@ export const SideBar = () => {
   //Default Data
 
   const loggedOutArr = [
-    { icon: "LogIn", route: "/login" },
-    { icon: "SignUp", route: "/signup" },
     {
-      icon: "Info", route: "/information",
+      icon: "LogIn",
+      route: "/login",
       drawer:
-        <>
-          <div>
-            LOL
-          </div>
-        </>
+        <BubbleDrawer
+          header={"Log In"}
+        />
     },
-    { icon: "Tools", route: "/tools" },
-    { icon: "Discord", route: "https://discord.com/invite/wNpVm35wbz", external: true }
+    {
+      icon: "SignUp",
+      route: "/signup",
+      drawer:
+        <BubbleDrawer
+          header={"Sign Up"}
+        />
+    },
+    {
+      icon: "Info",
+      route: "/information",
+      drawer:
+        <BubbleDrawer
+          header={"Info"}
+          content={<>test</>}
+        />
+    },
+    {
+      icon: "Tools",
+      route: "/tools",
+      drawer:
+        <BubbleDrawer
+          header={"Tools"}
+          content={<>test</>}
+        />
+    },
+    {
+      icon: "Discord",
+      route: "https://discord.com/invite/wNpVm35wbz",
+      external: true,
+      drawer:
+        <BubbleDrawer
+          header={"Discord"}
+        />
+    }
   ];
 
   const loggedInArr = [
@@ -45,7 +76,7 @@ export const SideBar = () => {
             iconName={current.icon}
             route={current.route}
             external={current.external ? true : false}
-            drawerItems={current.drawer ? current.drawer : false}
+            drawer={current.drawer ? current.drawer : false}
           />)
         }
       </div>

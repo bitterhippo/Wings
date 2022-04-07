@@ -6,7 +6,7 @@ import Colors from '../Colors';
 import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool, FiLogOut } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
-export const Bubbles = ({ iconName, route, external }) => {
+export const Bubbles = ({ iconName, route, external, drawer }) => {
 
   console.log(external);
 
@@ -60,7 +60,7 @@ export const Bubbles = ({ iconName, route, external }) => {
       < div
         style={{ ...styles.bubbleText, display: !selected ? 'none' : '' }}
       >
-        {iconName}
+        {drawer && drawer}
       </div>
     </div >
   )
@@ -83,13 +83,15 @@ const styles = {
     backgroundColor: 'white'
   },
   bubbleText: {
+    textAlign: 'center',
     position: 'absolute',
     backgroundColor: 'white',
     zIndex: 1,
     border: `1px solid ${Colors.DeepBlack}`,
     padding: '3px 5px',
+    minWidth: '100px',
     marginTop: '10px',
     borderRadius: '5px',
-    left: '80%'
+    left: '83%'
   }
 };
