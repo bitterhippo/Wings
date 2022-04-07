@@ -10,10 +10,20 @@ export const SideBar = () => {
 
   const [loggedIn, setLoggedIn] = useState(false);
 
+  //Default Data
+
   const loggedOutArr = [
     { icon: "LogIn", route: "/login" },
     { icon: "SignUp", route: "/signup" },
-    { icon: "Info", route: "/information" },
+    {
+      icon: "Info", route: "/information",
+      drawer:
+        <>
+          <div>
+            LOL
+          </div>
+        </>
+    },
     { icon: "Tools", route: "/tools" },
     { icon: "Discord", route: "https://discord.com/invite/wNpVm35wbz", external: true }
   ];
@@ -35,6 +45,7 @@ export const SideBar = () => {
             iconName={current.icon}
             route={current.route}
             external={current.external ? true : false}
+            drawerItems={current.drawer ? current.drawer : false}
           />)
         }
       </div>

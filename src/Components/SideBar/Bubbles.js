@@ -27,36 +27,37 @@ export const Bubbles = ({ iconName, route, external }) => {
 
   return (
     <div
-      style={
-        {
-          ...styles.bubbleWrapper,
-          border: selected ? `3px solid ${Colors.Green}` : '3px solid white'
-        }
-      }
+      style={styles.bubbleWrapper}
       onMouseEnter={() => setSelected(!selected)}
       onMouseLeave={() => setSelected(!selected)}
     >
-      {
-        !external
-          ?
-          <Link to={route}>
-            <div style={styles.iconContainer}>
-              {components[iconName]}
+      <div style={{
+        ...styles.iconWrapper,
+        border: selected ? `3px solid ${Colors.Green}` : '3px solid white'
+      }}>
+        {
+          /*   Conditional render for external links   */
+          !external
+            ?
+            <Link to={route}>
+              <div style={styles.iconContainer}>
+                {components[iconName]}
 
-            </div>
-          </Link>
-          :
-          <a href={route}
-            style={styles.iconContainer}
-          >
-            <div style={styles.iconContainer}>
-              {components[iconName]}
+              </div>
+            </Link>
+            :
+            <a href={route}
+              style={styles.iconContainer}
+            >
+              <div style={styles.iconContainer}>
+                {components[iconName]}
 
-            </div>
-          </a>
-      }
+              </div>
+            </a>
+        }
+      </div>
       {/* Floating Text Render Condiiton */}
-      <div
+      < div
         style={{ ...styles.bubbleText, display: !selected ? 'none' : '' }}
       >
         {iconName}
@@ -67,15 +68,19 @@ export const Bubbles = ({ iconName, route, external }) => {
 
 const styles = {
   bubbleWrapper: {
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  iconContainer: {
+    paddingTop: 8
+  },
+  iconWrapper: {
     textAlign: 'center',
     margin: 'auto',
     borderRadius: 30,
     height: 40,
     width: 40,
     backgroundColor: 'white'
-  },
-  iconContainer: {
-    paddingTop: 8
   },
   bubbleText: {
     position: 'absolute',
@@ -84,6 +89,7 @@ const styles = {
     border: `1px solid ${Colors.DeepBlack}`,
     padding: '3px 5px',
     marginTop: '10px',
-    borderRadius: '5px'
+    borderRadius: '5px',
+    left: '80%'
   }
 };
