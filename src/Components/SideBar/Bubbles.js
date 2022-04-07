@@ -8,8 +8,6 @@ import { FaDiscord } from "react-icons/fa";
 
 export const Bubbles = ({ iconName, route, external, drawer }) => {
 
-  console.log(external);
-
   const [selected, setSelected] = useState(false);
 
   //Icon Barrel
@@ -69,7 +67,8 @@ export const Bubbles = ({ iconName, route, external, drawer }) => {
 const styles = {
   bubbleWrapper: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    zIndex: 5,
   },
   iconContainer: {
     paddingTop: 8
@@ -86,10 +85,9 @@ const styles = {
     textAlign: 'center',
     position: 'absolute',
     backgroundColor: 'white',
-    zIndex: 1,
     border: `1px solid ${Colors.DeepBlack}`,
     padding: '3px 5px',
-    minWidth: '80px',
+    minWidth: '130px',
     marginTop: '10px',
     borderRadius: '5px',
     left: '83%'

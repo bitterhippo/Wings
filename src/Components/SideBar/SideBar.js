@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 //Subcomponents
 import Colors from '../Colors';
@@ -39,7 +40,9 @@ export const SideBar = () => {
           header={"Info"}
           content={
             <>
-              <SelectedWrapper>Server Information</SelectedWrapper>
+              <SelectedWrapper>
+                <Link to={{pathname: "/information", state: { selected: 'Rules' }}}>Server Information</Link>
+              </SelectedWrapper>
               <SelectedWrapper>Rules</SelectedWrapper>
               <SelectedWrapper>How to Connect</SelectedWrapper>
               <SelectedWrapper>FAQs</SelectedWrapper>
@@ -54,7 +57,14 @@ export const SideBar = () => {
       drawer:
         <BubbleDrawer
           header={"Tools"}
-          content={<>test</>}
+          content={
+            <>
+              <SelectedWrapper>Who is Online</SelectedWrapper>
+              <SelectedWrapper>Mentors</SelectedWrapper>
+              <SelectedWrapper>Player Search</SelectedWrapper>
+              <SelectedWrapper>Item Search</SelectedWrapper>
+            </>
+          }
         />
     },
     {
