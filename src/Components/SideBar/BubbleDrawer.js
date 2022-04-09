@@ -20,6 +20,7 @@ const styles = {
   bubbleDrawerWrapper: {
     display: 'flex',
     flexDirection: 'column',
+    zIndex: 5
   },
   bubbleDrawerHeader: {
     width: '100%'

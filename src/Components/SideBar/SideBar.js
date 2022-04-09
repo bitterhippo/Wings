@@ -6,6 +6,7 @@ import Colors from '../Colors';
 import { Bubbles } from './Bubbles';
 import { BubbleDrawer } from './BubbleDrawer';
 import { SelectedWrapper } from '../PPC/SelectedWrapper';
+import { SelectableLink } from '../PPC/Text/SelectableLink';
 
 //Subcomponents
 
@@ -40,41 +41,31 @@ export const SideBar = () => {
           header={"Info"}
           content={
             <>
-              <SelectedWrapper>
-                <Link
+              <SelectableLink
                   to="/information"
                   state={{ navLink: 'Server Information' }}
                 >Server Information
-                </Link>
-              </SelectedWrapper>
-              <SelectedWrapper>
-                <Link
+              </SelectableLink>
+              <SelectableLink
                   to="/information"
                   state={{ navLink: 'Rules' }}
                 >Rules
-                </Link>
-              </SelectedWrapper>
-              <SelectedWrapper>
-                <Link
+              </SelectableLink>
+              <SelectableLink
                   to="/information"
                   state={{ navLink: 'How to Connect' }}
                 >How to Connect
-                </Link>
-              </SelectedWrapper>
-              <SelectedWrapper>
-                <Link
+              </SelectableLink>
+              <SelectableLink
                   to="/information"
                   state={{ navLink: 'FAQs' }}
                 >FAQs
-                </Link>
-              </SelectedWrapper>
-              <SelectedWrapper>
-                <Link
+              </SelectableLink>
+              <SelectableLink
                   to="/information"
                   state={{ navLink: 'Support' }}
                 >Support
-                </Link>
-              </SelectedWrapper>
+              </SelectableLink>
             </>
           }
         />

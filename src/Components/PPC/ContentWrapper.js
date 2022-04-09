@@ -56,6 +56,6 @@ const styles = {
     position: 'fixed',
     bottom: '5%',
     right: '5%',
-    zIndex: 1,
+    zIndex: 2,
   }
 };

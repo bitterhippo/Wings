@@ -3,7 +3,6 @@ import Colors from '../Colors';
 
 //Subcomponents
 
-
 export const SelectedWrapper = (props) => {
 
   const [selected, toggledSelected] = useState(false);
