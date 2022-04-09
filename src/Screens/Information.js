@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 //Subcomponents
 import { ContentWrapper } from '../Components/PPC/ContentWrapper';
@@ -9,6 +10,8 @@ import Colors from '../Components/Colors';
 export const Information = () => {
 
   const [selected, setSelected] = useState('Server Information');
+
+  console.log(location.state);
 
   //Defaults
   const miniNavDefaults = [
