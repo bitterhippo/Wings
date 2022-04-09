@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 //Subcomponents
 import { ContentWrapper } from '../Components/PPC/ContentWrapper';
@@ -7,7 +8,9 @@ import { MiniNav } from '../Components/MiniNav/MiniNav';
 
 export const Tools = () => {
 
-  const [selected, setSelected] = useState('Who is Online');
+  const locationData = useLocation();
+
+  const [selected, setSelected] = useState(locationData.state ? locationData.state.navLink : 'Who is Online');
 
   const miniNavDefaults = [
     `Who is Online`,

@@ -11,8 +11,6 @@ export const Information = () => {
 
   const locationData = useLocation();
 
-  console.log(locationData);
-
   const [selected, setSelected] = useState(locationData.state ? locationData.state.navLink : 'Server Information');
 
   //Defaults

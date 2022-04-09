@@ -78,10 +78,26 @@ export const SideBar = () => {
           header={"Tools"}
           content={
             <>
-              <SelectedWrapper>Who is Online</SelectedWrapper>
-              <SelectedWrapper>Mentors</SelectedWrapper>
-              <SelectedWrapper>Player Search</SelectedWrapper>
-              <SelectedWrapper>Item Search</SelectedWrapper>
+              <SelectableLink
+                  to="/tools"
+                  state={{ navLink: 'Who is Online' }}
+                >Who is Online
+              </SelectableLink>
+              <SelectableLink
+                  to="/tools"
+                  state={{ navLink: 'Mentors' }}
+                >Mentors
+              </SelectableLink>
+              <SelectableLink
+                  to="/tools"
+                  state={{ navLink: 'Player Search' }}
+                >Player Search
+              </SelectableLink>
+              <SelectableLink
+                  to="/tools"
+                  state={{ navLink: 'Item Search' }}
+                >Item Search
+              </SelectableLink>
             </>
           }
         />

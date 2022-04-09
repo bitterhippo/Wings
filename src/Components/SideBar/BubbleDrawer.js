@@ -20,9 +20,11 @@ const styles = {
   bubbleDrawerWrapper: {
     display: 'flex',
     flexDirection: 'column',
-    zIndex: 5
+    zIndex: 5,
   },
   bubbleDrawerHeader: {
-    width: '100%'
+    width: '100%',
+    color: Colors.AshBlack,
+    fontWeight: 'bold'
   }
 };

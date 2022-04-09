@@ -32,6 +32,7 @@ const styles = {
   selectableLink: {
     color: 'white',
     cursor: 'pointer',
+    margin: '2px 0px',
   },
   styledLink: {
     textDecoration: 'none',
