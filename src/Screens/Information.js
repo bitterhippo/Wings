@@ -11,7 +11,9 @@ export const Information = () => {
 
   const locationData = useLocation();
 
-  const [selected, setSelected] = useState(locationData ? locationData.state.navLink : 'Server Information');
+  console.log(locationData);
+
+  const [selected, setSelected] = useState(locationData.state ? locationData.state.navLink : 'Server Information');
 
   //Defaults
   const miniNavDefaults = [
