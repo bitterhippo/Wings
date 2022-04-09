@@ -9,9 +9,9 @@ import Colors from '../Components/Colors';
 
 export const Information = () => {
 
-  const [selected, setSelected] = useState('Server Information');
+  const locationData = useLocation();
 
-  console.log(location.state);
+  const [selected, setSelected] = useState(locationData ? locationData.state.navLink : 'Server Information');
 
   //Defaults
   const miniNavDefaults = [

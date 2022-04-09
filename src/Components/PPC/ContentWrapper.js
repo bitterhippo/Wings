@@ -45,7 +45,6 @@ const styles = {
     width: '80%',
     margin: '100px auto 0px auto',
     paddingBottom: '100px',
-    zIndex: -1
   },
   scrollButton: {
     backgroundColor: `${Colors.AshBlack}`,

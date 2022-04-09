@@ -41,12 +41,40 @@ export const SideBar = () => {
           content={
             <>
               <SelectedWrapper>
-                <Link to={{pathname: "/information", state: { selected: 'Rules' }}}>Server Information</Link>
+                <Link
+                  to="/information"
+                  state={{ navLink: 'Server Information' }}
+                >Server Information
+                </Link>
               </SelectedWrapper>
-              <SelectedWrapper>Rules</SelectedWrapper>
-              <SelectedWrapper>How to Connect</SelectedWrapper>
-              <SelectedWrapper>FAQs</SelectedWrapper>
-              <SelectedWrapper>Support</SelectedWrapper>
+              <SelectedWrapper>
+                <Link
+                  to="/information"
+                  state={{ navLink: 'Rules' }}
+                >Rules
+                </Link>
+              </SelectedWrapper>
+              <SelectedWrapper>
+                <Link
+                  to="/information"
+                  state={{ navLink: 'How to Connect' }}
+                >How to Connect
+                </Link>
+              </SelectedWrapper>
+              <SelectedWrapper>
+                <Link
+                  to="/information"
+                  state={{ navLink: 'FAQs' }}
+                >FAQs
+                </Link>
+              </SelectedWrapper>
+              <SelectedWrapper>
+                <Link
+                  to="/information"
+                  state={{ navLink: 'Support' }}
+                >Support
+                </Link>
+              </SelectedWrapper>
             </>
           }
         />

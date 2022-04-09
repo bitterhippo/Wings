@@ -9,6 +9,7 @@ export const StyledLink = (props) => {
     <Link
       style={styles.styledLink}
       to={props.to}
+      state={props.state}
     >
       {props.children}
     </Link>
