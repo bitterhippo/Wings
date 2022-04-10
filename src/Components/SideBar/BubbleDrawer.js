@@ -6,24 +6,25 @@ import Colors from '../Colors';
 export const BubbleDrawer = ({ content, header }) => {
   return (
     <div style={styles.bubbleDrawerWrapper}>
-      <span style={{
-        ...styles.bubbleDrawerHeader, 
-        borderBottom: content ? `1px solid ${Colors.AshBlack}` : ''
+      <div style={styles.bubbleDrawerList}>
+        <span style={{
+          ...styles.bubbleDrawerHeader,
+          borderBottom: content ? `1px solid ${Colors.AshBlack}` : ''
         }}>
-        {header}
-      </span>
-      {
-        content
-      }
+          {header}
+        </span>
+        {
+          content
+        }
+      </div>
     </div>
   )
 };
 
 const styles = {
-  bubbleDrawerWrapper: {
+  bubbleDrawerList: {
     display: 'flex',
     flexDirection: 'column',
-    zIndex: 5,
   },
   bubbleDrawerHeader: {
     width: '100%',

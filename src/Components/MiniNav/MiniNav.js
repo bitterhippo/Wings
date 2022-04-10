@@ -30,7 +30,7 @@ const styles = {
     gap: 25,
     width: '100%',
     margin: 'auto auto',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   miniNavHeaders: {
     fontSize: 20,

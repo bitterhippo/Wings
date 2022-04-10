@@ -56,7 +56,7 @@ export const Bubbles = ({ iconName, route, external, drawer }) => {
       </div>
       {/* Floating Text Render Condiiton */}
       < div
-        style={{ ...styles.bubbleText, display: !selected ? 'none' : '' }}
+        style={{ ...styles.bubbleText, visibility: !selected ? 'hidden' : '' }}
       >
         {drawer && drawer}
       </div>
@@ -68,7 +68,7 @@ const styles = {
   bubbleWrapper: {
     display: 'flex',
     flexDirection: 'row',
-    zIndex: 5,
+    zIndex: 100,
   },
   iconContainer: {
     paddingTop: 8
