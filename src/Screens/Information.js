@@ -36,17 +36,3 @@ export const Information = () => {
   )
 };
 
-const styles = {
-  miniNavTabs: {
-    display: 'inline-flex',
-    gap: 25,
-    width: '100%',
-    margin: 'auto auto',
-    justifyContent: 'space-between'
-  },
-  miniNavHeaders: {
-    fontSize: 20,
-    color: Colors.AshBlack,
-    cursor: 'pointer'
-  }
-};
