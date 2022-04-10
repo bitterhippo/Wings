@@ -1,10 +1,13 @@
 import React from 'react';
 
+//Subcomponents
+import { ContentWrapper } from '../Components/PPC/ContentWrapper';
+
 export const LogIn = () => {
   return (
-    <>
-    Login Portal
-    </>
+    <ContentWrapper>
+      Log in portal!
+    </ContentWrapper>
   )
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 //Subcomponents
@@ -8,10 +8,6 @@ import { MiniNav } from '../Components/MiniNav/MiniNav';
 
 export const Tools = () => {
 
-  const locationData = useLocation();
-
-  const [selected, setSelected] = useState(locationData.state ? locationData.state.navLink : 'Who is Online');
-
   const miniNavDefaults = [
     `Who is Online`,
     `Mentors`,
@@ -19,12 +15,24 @@ export const Tools = () => {
     `Item Search`,
   ];
 
+  const locationData = useLocation();
+
+  const [selected, setSelected] = useState(locationData.state != null
+    ? locationData.state.navLink
+    : miniNavDefaults[0]);
+
+  useEffect(() => {
+    if (locationData.state != null) {
+      setSelected(locationData.state.navLink)
+    }
+  }, [locationData.state]);
+
   return (
     <ContentWrapper>
       <MiniNav
-      arrayData={miniNavDefaults}
-      stateHandler={setSelected}
-      selectedNav={selected}
+        arrayData={miniNavDefaults}
+        stateHandler={setSelected}
+        selectedNav={selected}
       />
       {
         ToolDefaults[selected.split(" ").join("")].data

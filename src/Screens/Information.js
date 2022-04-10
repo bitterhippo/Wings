@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 //Subcomponents
 import { ContentWrapper } from '../Components/PPC/ContentWrapper';
 import { InformationDefaults } from '../Defaults/Information';
 import { MiniNav } from '../Components/MiniNav/MiniNav';
-import Colors from '../Components/Colors';
 
 export const Information = () => {
-
-  const locationData = useLocation();
-
-  const [selected, setSelected] = useState(locationData.state ? locationData.state.navLink : 'Server Information');
 
   //Defaults
   const miniNavDefaults = [
@@ -21,6 +16,18 @@ export const Information = () => {
     'FAQs',
     'Support'
   ];
+
+  const locationData = useLocation();
+
+  const [selected, setSelected] = useState(locationData.state != null
+    ? locationData.state.navLink
+    : miniNavDefaults[0]);
+
+  useEffect(() => {
+    if (locationData.state != null) {
+      setSelected(locationData.state.navLink)
+    }
+  }, [locationData.state]);
 
   return (
     <ContentWrapper>

@@ -6,7 +6,10 @@ import Colors from '../Colors';
 export const BubbleDrawer = ({ content, header }) => {
   return (
     <div style={styles.bubbleDrawerWrapper}>
-      <span style={styles.bubbleDrawerHeader}>
+      <span style={{
+        ...styles.bubbleDrawerHeader, 
+        borderBottom: content ? `1px solid ${Colors.AshBlack}` : ''
+        }}>
         {header}
       </span>
       {
@@ -25,6 +28,6 @@ const styles = {
   bubbleDrawerHeader: {
     width: '100%',
     color: Colors.AshBlack,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   }
 };
