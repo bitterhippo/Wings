@@ -6,6 +6,12 @@ import { ContentWrapper } from '../Components/PPC/ContentWrapper';
 import { ToolDefaults } from '../Defaults/Tools';
 import { MiniNav } from '../Components/MiniNav/MiniNav';
 
+//Subscreens
+import { Online } from './ToolsSubscreens/Online';
+import { ItemSearch } from './ToolsSubscreens/ItemSearch';
+import { Mentors } from './ToolsSubscreens/Mentors';
+import { PlayerSearch } from './ToolsSubscreens/PlayerSearch';
+
 export const Tools = () => {
 
   const miniNavDefaults = [
@@ -27,6 +33,8 @@ export const Tools = () => {
     }
   }, [locationData.state]);
 
+  console.log(selected)
+
   return (
     <ContentWrapper>
       <MiniNav
@@ -34,9 +42,10 @@ export const Tools = () => {
         stateHandler={setSelected}
         selectedNav={selected}
       />
-      {
-        ToolDefaults[selected.split(" ").join("")].data
-      }
+      {selected === miniNavDefaults[0] && <Online />}
+      {selected === miniNavDefaults[1] && <Mentors />}
+      {selected === miniNavDefaults[2] && <PlayerSearch />}
+      {selected === miniNavDefaults[3] && <ItemSearch />}
     </ContentWrapper>
   )
 };

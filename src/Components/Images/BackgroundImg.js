@@ -23,7 +23,7 @@ const styles = {
   imgWrapper: {
     position: 'absolute',
     zIndex: -2,
-    top: "235px",
+    top: "285px",
     left: "50%",
     transform: "translate(-50%, -50%)"
   }

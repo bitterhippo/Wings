@@ -91,6 +91,5 @@ const styles = {
     marginTop: '10px',
     borderRadius: '5px',
     left: '83%',
-    zIndex: 100,
   }
 };
