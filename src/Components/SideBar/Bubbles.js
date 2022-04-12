@@ -90,6 +90,7 @@ const styles = {
     minWidth: '130px',
     marginTop: '10px',
     borderRadius: '5px',
-    left: '83%'
+    left: '83%',
+    zIndex: 100,
   }
 };

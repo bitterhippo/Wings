@@ -41,7 +41,6 @@ export const ContentWrapper = props => {
 
 const styles = {
   contentWrapper: {
-    position: 'relative',
     width: '80%',
     margin: '100px auto 0px auto',
     paddingBottom: '100px',
