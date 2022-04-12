@@ -1,17 +1,17 @@
 import React from 'react';
 
 //Subcomponents
-import { BubbleDrawer } from '../../Components/SideBar/BubbleDrawer';
+import { CustomPicker } from '../../Components/Pickers/CustomPicker';
 
 export const Online = () => {
   return (
     <>
-    <BubbleDrawer content={"Servers"}>
-      <>
-      Test
-      </>
-    </BubbleDrawer>
-    There are currently 600 players online.
+      <CustomPicker header={"Servers"}>
+        <>Check</>
+        <>This</>
+        <>Out</>
+      </CustomPicker>
+      There are currently 600 players online.
     </>
   )
 };

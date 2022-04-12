@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 //Subcomponents
 import Colors from '../Colors';
-import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool, FiLogOut } from "react-icons/fi";
+import { FiLogIn, FiUserPlus, FiInfo, FiSettings, FiUsers, FiTool, FiLogOut, FiGlobe } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
 export const Bubbles = ({ iconName, route, external, drawer }) => {
@@ -21,6 +21,7 @@ export const Bubbles = ({ iconName, route, external, drawer }) => {
     Community: <FiUsers color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
     Discord: <FaDiscord color={selected ? Colors.Green : Colors.AshBlack} size={28} />,
     LogOut: <FiLogOut color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
+    Globe: <FiGlobe color={selected ? Colors.Green : Colors.AshBlack} size={24} />,
   }
 
   return (

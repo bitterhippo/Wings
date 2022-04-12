@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
 
 //Subcomponents
 import Colors from '../Colors';
 import { Bubbles } from './Bubbles';
 import { BubbleDrawer } from './BubbleDrawer';
-import { SelectedWrapper } from '../PPC/SelectedWrapper';
 import { SelectableLink } from '../PPC/Text/SelectableLink';
 
 //Subcomponents
@@ -121,6 +119,8 @@ export const SideBar = () => {
     { icon: "Discord", route: "https://discord.com/invite/wNpVm35wbz", external: true }
   ]
 
+  //Subrender function that enables multiple lists to be rendered correctly and opened
+
   const listRender = (list) => {
     return (
       <div style={styles.bubbleList}>
@@ -136,6 +136,8 @@ export const SideBar = () => {
       </div>
     )
   }
+
+  //Main render function
 
   return (
     <div style={styles.barWrapper}>
