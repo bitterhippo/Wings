@@ -21,7 +21,6 @@ export const SelectedWrapper = (props) => {
 const styles = {
   selected: {
     backgroundColor: Colors.Green,
-    opacity: 0.6,
     color: 'white',
     cursor: 'pointer'
   },

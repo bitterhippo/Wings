@@ -5,11 +5,13 @@ import tinyCait from "./tinyCait.png"
 
 export const BackgroundImage = () => {
   return (
-    <div style={styles.imgWrapper}>
-      <img
-        style={styles.imgContainer}
-        src={tinyCait}
-      />
+    <div>
+      <div style={styles.imgWrapper}>
+        <img
+          style={styles.imgContainer}
+          src={tinyCait}
+        />
+      </div>
     </div>
   )
 };
@@ -18,14 +20,14 @@ const styles = {
   imgContainer: {
     height: '100%',
     width: '100%',
-    opacity: ".2",
   },
   imgWrapper: {
     position: 'absolute',
     zIndex: -2,
     top: "285px",
     left: "50%",
-    transform: "translate(-50%, -50%)"
+    transform: "translate(-50%, -50%)",
+    opacity: '.2'
   }
 };
 
