@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 //Subcomponents
+import Colors from '../Colors';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
-export const CustomPicker = ({header, children }) => {
+export const CustomPicker = ({ header, children }) => {
 
   const [open, toggleOpen] = useState(false)
 
@@ -11,10 +13,13 @@ export const CustomPicker = ({header, children }) => {
       style={styles.pickerWrapper}
       onClick={() => toggleOpen(previousState => !previousState)}
     >
-      {header}
+      <div style={styles.headerRow}>
+        <span>{header}</span>
+        <span style={styles.icon}>{!open ? <FiChevronDown /> : <FiChevronUp />}</span>
+      </div>
       {open &&
         <div
-          style={{...styles.hiddenContent, display: open ? 'show' : ''}}>
+          style={{ ...styles.hiddenContent, display: open ? 'show' : '' }}>
           {children}
         </div>}
     </div>
@@ -23,15 +28,28 @@ export const CustomPicker = ({header, children }) => {
 
 const styles = {
   pickerWrapper: {
-    cursor: 'pointer'
-  },
-  hiddenContent: {
+    cursor: 'pointer',
+    border: '1px solid black',
+    width: 90,
+    backgroundColor: 'white',
+    textAlign: 'center',
     display: 'flex',
     position: 'absolute',
     flexDirection: 'column',
-    backgroundColor: 'white',
-    border: '1px solid black',
-    width: 100,
-    textAlign: 'center'
+    color: Colors.AshBlack
+  },
+  openHeader: {
+    borderBottom: '1px solid black'
+  },
+  headerRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 3
+  },
+  icon: {
+    marginTop: 2
   }
 };

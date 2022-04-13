@@ -8,9 +8,8 @@ export const Online = () => {
   return (
     <>
       <CustomPicker header={"Servers"}>
-        <SelectedWrapper>Check</SelectedWrapper>
-        <SelectedWrapper>This</SelectedWrapper>
-        <SelectedWrapper>Out</SelectedWrapper>
+        <SelectedWrapper>Wings</SelectedWrapper>
+        <SelectedWrapper>Tonberry</SelectedWrapper>
       </CustomPicker>
       There are currently 600 players online.
     </>
