@@ -33,8 +33,6 @@ export const Tools = () => {
     }
   }, [locationData.state]);
 
-  console.log(selected)
-
   return (
     <ContentWrapper>
       <MiniNav
