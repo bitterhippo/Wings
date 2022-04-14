@@ -15,7 +15,7 @@ export const Online = () => {
     <div>
       <div style={styles.content}>
         <span>World:</span>
-        <span>
+        <span style={styles.pickerWrapper}>
           <CustomPicker header={"Servers"}>
             <SelectedWrapper>
               <span onClick={() => setServer('Wings')}>Wings</span></SelectedWrapper>
@@ -41,5 +41,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     marginTop: 25,
+  },
+  pickerWrapper: {
+    marginTop: '-3px',
+    marginLeft: 5
   }
 };

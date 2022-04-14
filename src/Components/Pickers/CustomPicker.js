@@ -9,20 +9,22 @@ export const CustomPicker = ({ header, children }) => {
   const [open, toggleOpen] = useState(false)
 
   return (
-    <div
-      style={styles.pickerWrapper}
-      onClick={() => toggleOpen(previousState => !previousState)}
-    >
-      <div style={styles.headerRow}>
-        <span>{header}</span>
-        <span style={styles.icon}>{!open ? <FiChevronDown /> : <FiChevronUp />}</span>
+    <span >
+      <div
+        style={styles.pickerWrapper}
+        onClick={() => toggleOpen(previousState => !previousState)}
+      >
+        <div style={styles.headerRow}>
+          <span>{header}</span>
+          <span style={styles.icon}>{!open ? <FiChevronDown /> : <FiChevronUp />}</span>
+        </div>
+        {open &&
+          <div
+            style={{ ...styles.hiddenContent, display: open ? 'show' : '' }}>
+            {children}
+          </div>}
       </div>
-      {open &&
-        <div
-          style={{ ...styles.hiddenContent, display: open ? 'show' : '' }}>
-          {children}
-        </div>}
-    </div>
+    </span>
   )
 };
 
@@ -51,5 +53,5 @@ const styles = {
   },
   icon: {
     marginTop: 2
-  }
+  },
 };
