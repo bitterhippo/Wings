@@ -9,14 +9,18 @@ export const Online = () => {
 
   const [server, setServer] = useState('Wings');
 
+  console.log(server);
+
   return (
     <div>
       <div style={styles.content}>
         <span>World:</span>
         <span>
           <CustomPicker header={"Servers"}>
-            <SelectedWrapper>Wings</SelectedWrapper>
-            <SelectedWrapper>Tonberry</SelectedWrapper>
+            <SelectedWrapper>
+              <span onClick={() => setServer('Wings')}>Wings</span></SelectedWrapper>
+              <SelectedWrapper>
+              <span onClick={() => setServer('Tonberry')}>Tonberry</span></SelectedWrapper>
           </CustomPicker>
         </span>
       </div>
