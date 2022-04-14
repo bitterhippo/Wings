@@ -36,7 +36,7 @@ const styles = {
     display: 'flex',
     position: 'absolute',
     flexDirection: 'column',
-    color: Colors.AshBlack
+    color: Colors.AshBlack,
   },
   openHeader: {
     borderBottom: '1px solid black'

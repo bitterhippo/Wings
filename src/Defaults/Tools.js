@@ -5,13 +5,31 @@ export const ToolDefaults = {
     data:
       <>
         lol
-      </>
+      </>,
+    Wings: [
+      {
+        name: 'test',
+        jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
+        currentJob: {blm: 30, mnk: 15},
+        faction: {faction: 'Windurst', rank: 2},
+        zone: 'South Gustaberg',
+      }
+    ],
+    Tonberry: [
+      {
+        name: 'tonberryTest',
+        jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
+        currentJob: {blm: 30, mnk: 15},
+        faction: {faction: 'Windurst', rank: 2},
+        zone: 'South Gustaberg',
+      }
+    ]
   },
   Mentors: {
-    data: 
-    <> 
-    test
-    </>
+    data:
+      <>
+        test
+      </>
   },
   PlayerSearch: {
     data:
