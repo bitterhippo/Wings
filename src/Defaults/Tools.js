@@ -8,7 +8,7 @@ export const ToolDefaults = {
       </>,
     Wings: [
       {
-        name: 'test',
+        name: 'wingstest',
         jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
         currentJob: {blm: 30, mnk: 15},
         faction: {faction: 'Windurst', rank: 2},

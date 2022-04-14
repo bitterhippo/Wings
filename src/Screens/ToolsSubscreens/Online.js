@@ -23,9 +23,9 @@ export const Online = () => {
       <div style={styles.content}>
         There are currently 600 people online
       </div>
-      {toolsDefaults.WhoisOnline[server] &&
+      {ToolDefaults.WhoisOnline[server] &&
         <>
-         { toolsDefaults.WhoisOnline[server][0] }
+         { ToolDefaults.WhoisOnline[server][0].name }
         </>
       }
     </div>
