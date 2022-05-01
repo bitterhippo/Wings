@@ -13,26 +13,26 @@ export const PlayerView = ({ playerData }) => {
 
   //Testing Block
 
-  let colorBarrel= `${selected ? 'white' : Colors.AshBlack }`
+  let colorBarrel = `${selected ? 'white' : Colors.AshBlack}`
 
   return (
-    <div style={{...styles.playerViewWrapper, backgroundColor: selected ? Colors.Green : ''}}
+    <div style={{ ...styles.playerViewWrapper, backgroundColor: selected ? Colors.Green : '' }}
       onMouseEnter={() => toggleSelected(!selected)}
       onMouseLeave={() => toggleSelected(!selected)}
+      onClick={() => toggleOpen(!open)}
     >
-      <span style={{...styles.styledText, color: colorBarrel }}>
+      <span style={{ ...styles.styledText, color: colorBarrel }}>
         {playerData.name}
       </span>
       <div
-        onClick={() => toggleOpen(!open)}
         style={styles.playerInformation}
       >
-        <span style={{...styles.styledText, color: colorBarrel }}>
+        <span style={{ ...styles.styledText, color: colorBarrel }}>
           {currentJob}
         </span>
         <div>
-          {!open && <FiPlusCircle color={colorBarrel} fontSize={16}/>}
-          {open && <FiMinusCircle color={colorBarrel} fontSize={16}/>}
+          {!open && <FiPlusCircle color={colorBarrel} fontSize={16} />}
+          {open && <FiMinusCircle color={colorBarrel} fontSize={16} />}
         </div>
       </div>
     </div>
