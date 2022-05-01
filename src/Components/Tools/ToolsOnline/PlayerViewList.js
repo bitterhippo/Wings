@@ -23,7 +23,9 @@ export const PlayerViewList = ({ serverData }) => {
 
 const styles = {
   playerViewList: {
+    flex: 1,
     display: 'flex',
     flexDirection: 'column',
+    gap: 5
   }
 };
