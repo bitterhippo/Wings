@@ -4,12 +4,11 @@ import React, { useState } from 'react';
 import { CustomPicker } from '../../Components/Pickers/CustomPicker';
 import { SelectedWrapper } from '../../Components/PPC/SelectedWrapper';
 import { ToolDefaults } from '../../Defaults/Tools';
+import { PlayerViewList } from '../../Components/Tools/ToolsOnline/PlayerViewList';
 
 export const Online = () => {
 
   const [server, setServer] = useState('Wings');
-
-  console.log(server);
 
   return (
     <div>
@@ -19,19 +18,14 @@ export const Online = () => {
           <CustomPicker header={"Servers"}>
             <SelectedWrapper>
               <span onClick={() => setServer('Wings')}>Wings</span></SelectedWrapper>
-              <SelectedWrapper>
+            <SelectedWrapper>
               <span onClick={() => setServer('Tonberry')}>Tonberry</span></SelectedWrapper>
           </CustomPicker>
         </span>
       </div>
       <div style={styles.content}>
-        There are currently 600 people online
+        <PlayerViewList serverData={ToolDefaults.WhoisOnline[server]} />
       </div>
-      {ToolDefaults.WhoisOnline[server] &&
-        <>
-         { ToolDefaults.WhoisOnline[server][0].name }
-        </>
-      }
     </div>
   )
 };
