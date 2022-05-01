@@ -7,22 +7,32 @@ import Colors from '../../Colors';
 export const PlayerView = ({ playerData }) => {
 
   const [open, toggleOpen] = useState(false);
+  const [selected, toggleSelected] = useState(false);
 
   let currentJob = `${playerData.currentJob.primary.join('')}/${playerData.currentJob.secondary.join('')}`
 
+  //Testing Block
+
+  let colorBarrel= `${selected ? 'white' : Colors.AshBlack }`
+
   return (
-    <div style={styles.playerViewWrapper}>
-      <span>{playerData.name}</span>
-      <div 
-      onClick={() => toggleOpen(!open)}
-      style={styles.playerInformation}
+    <div style={{...styles.playerViewWrapper, backgroundColor: selected ? Colors.Green : ''}}
+      onMouseEnter={() => toggleSelected(!selected)}
+      onMouseLeave={() => toggleSelected(!selected)}
+    >
+      <span style={{...styles.styledText, color: colorBarrel }}>
+        {playerData.name}
+      </span>
+      <div
+        onClick={() => toggleOpen(!open)}
+        style={styles.playerInformation}
       >
-        <span>
+        <span style={{...styles.styledText, color: colorBarrel }}>
           {currentJob}
         </span>
         <div>
-          {!open && <FiPlusCircle color={Colors.Green} />}
-          {open && <FiMinusCircle color={Colors.Crimson} />}
+          {!open && <FiPlusCircle color={colorBarrel} fontSize={16}/>}
+          {open && <FiMinusCircle color={colorBarrel} fontSize={16}/>}
         </div>
       </div>
     </div>
