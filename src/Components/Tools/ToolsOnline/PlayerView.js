@@ -40,13 +40,18 @@ export const PlayerView = ({ playerData }) => {
         </div>
       </div>
       <div style={styles.characterInfoWrapper}>
-        <h3>Jobs</h3>
-        {
-          jobsList.map((currentJob, index) => 
-          <div key={currentJob}>
-            {jobsList[index]} : {playerData.jobs[currentJob]}
-          </div>)
-        }
+        <div style={styles.characterInfoBox1}>
+          Status
+        </div>
+        <div style={styles.characterInfoBox2}>
+          Jobs
+          {
+            jobsList.map((currentJob, index) =>
+              <div key={currentJob}>
+                <span style={styles.jobText}>{jobsList[index]} : {playerData.jobs[currentJob]}</span>
+              </div>)
+          }
+        </div>
       </div>
     </>
   )
@@ -72,6 +77,19 @@ const styles = {
     gap: 10
   },
   characterInfoWrapper: {
-
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  jobText: {
+    color: Colors.AshBlack,
+    fontWeight: 'bold'
+  },
+  characterInfoBox1: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  characterInfoBox2: {
+    flex: 2
   }
 };
