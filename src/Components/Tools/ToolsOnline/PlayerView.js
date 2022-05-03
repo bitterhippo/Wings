@@ -41,7 +41,10 @@ export const PlayerView = ({ playerData }) => {
       </div>
       <div style={styles.characterInfoWrapper}>
         <div style={styles.characterInfoBox1}>
-          Status
+          <span>Server: Wings</span>
+          <span>Status : Online</span>
+          <span>Nation: {playerData.faction.faction}, Rank {playerData.faction.rank} </span>
+          <span>Location: {playerData.zone}</span>
         </div>
         <div style={styles.characterInfoBox2}>
           Jobs
@@ -78,7 +81,8 @@ const styles = {
   },
   characterInfoWrapper: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    padding: '5px 15px',
   },
   jobText: {
     color: Colors.AshBlack,
@@ -87,9 +91,7 @@ const styles = {
   characterInfoBox1: {
     flex: 1,
     display: 'flex',
-    flexDirection: 'row'
-  },
-  characterInfoBox2: {
-    flex: 2
+    flexDirection: 'column',
+    justifyContent: 'space-between'
   }
 };
