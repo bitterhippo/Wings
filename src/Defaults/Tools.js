@@ -8,7 +8,21 @@ export const ToolDefaults = {
       </>,
     Wings: [
       {
-        name: 'wingstest',
+        name: 'PlayerOneWing',
+        jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
+        currentJob: {primary: ['blm', 30], secondary: ['mnk', 15]},
+        faction: {faction: 'Windurst', rank: 2},
+        zone: 'South Gustaberg',
+      },
+      {
+        name: 'PlayerTwoWing',
+        jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
+        currentJob: {primary: ['blm', 30], secondary: ['mnk', 15]},
+        faction: {faction: 'Windurst', rank: 2},
+        zone: 'South Gustaberg',
+      },
+      {
+        name: 'PlayerThreeWing',
         jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
         currentJob: {primary: ['blm', 30], secondary: ['mnk', 15]},
         faction: {faction: 'Windurst', rank: 2},
@@ -17,7 +31,21 @@ export const ToolDefaults = {
     ],
     Tonberry: [
       {
-        name: 'tonberryTest',
+        name: 'PlayerOneTon',
+        jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
+        currentJob: {primary: ['blm', 30], secondary: ['mnk', 15]},
+        faction: {faction: 'Windurst', rank: 2},
+        zone: 'South Gustaberg',
+      },
+      {
+        name: 'PlayerTwoTon',
+        jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
+        currentJob: {primary: ['blm', 30], secondary: ['mnk', 15]},
+        faction: {faction: 'Windurst', rank: 2},
+        zone: 'South Gustaberg',
+      },
+      {
+        name: 'PlayerThreeTon',
         jobs: { whm: 5, rdm: 0, sch: 3, warrior: 2 },
         currentJob: {primary: ['blm', 30], secondary: ['mnk', 15]},
         faction: {faction: 'Windurst', rank: 2},

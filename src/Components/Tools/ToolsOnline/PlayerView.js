@@ -11,31 +11,44 @@ export const PlayerView = ({ playerData }) => {
 
   let currentJob = `${playerData.currentJob.primary.join('')}/${playerData.currentJob.secondary.join('')}`
 
-  //Testing Block
-
   let colorBarrel = `${selected ? 'white' : Colors.AshBlack}`
 
+  //Character Information Panel
+
+  let jobsList = Object.keys(playerData.jobs)
+
   return (
-    <div style={{ ...styles.playerViewWrapper, backgroundColor: selected ? Colors.Green : '' }}
-      onMouseEnter={() => toggleSelected(!selected)}
-      onMouseLeave={() => toggleSelected(!selected)}
-      onClick={() => toggleOpen(!open)}
-    >
-      <span style={{ ...styles.styledText, color: colorBarrel }}>
-        {playerData.name}
-      </span>
-      <div
-        style={styles.playerInformation}
+    <>
+      <div style={{ ...styles.playerViewWrapper, backgroundColor: selected ? Colors.Green : '' }}
+        onMouseEnter={() => toggleSelected(!selected)}
+        onMouseLeave={() => toggleSelected(!selected)}
+        onClick={() => toggleOpen(!open)}
       >
         <span style={{ ...styles.styledText, color: colorBarrel }}>
-          {currentJob}
+          {playerData.name}
         </span>
-        <div>
-          {!open && <FiPlusCircle color={colorBarrel} fontSize={16} />}
-          {open && <FiMinusCircle color={colorBarrel} fontSize={16} />}
+        <div
+          style={styles.playerInformation}
+        >
+          <span style={{ ...styles.styledText, color: colorBarrel }}>
+            {currentJob}
+          </span>
+          <div>
+            {!open && <FiPlusCircle color={colorBarrel} fontSize={16} />}
+            {open && <FiMinusCircle color={colorBarrel} fontSize={16} />}
+          </div>
         </div>
       </div>
-    </div>
+      <div style={styles.characterInfoWrapper}>
+        <h3>Jobs</h3>
+        {
+          jobsList.map((currentJob, index) => 
+          <div key={currentJob}>
+            {jobsList[index]} : {playerData.jobs[currentJob]}
+          </div>)
+        }
+      </div>
+    </>
   )
 };
 
@@ -47,7 +60,8 @@ const styles = {
     justifyContent: 'space-between',
     flexDirection: 'row',
     borderRadius: 15,
-    padding: '5px 15px'
+    padding: '5px 15px',
+    cursor: 'pointer'
   },
   styledText: {
     fontWeight: 'bold',
@@ -56,5 +70,8 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     gap: 10
+  },
+  characterInfoWrapper: {
+
   }
 };
