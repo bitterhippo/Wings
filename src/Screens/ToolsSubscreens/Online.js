@@ -14,17 +14,19 @@ export const Online = () => {
     <div>
       <div style={styles.content}>
         <span>World:</span>
+        {/* Picker Wrapper & Items */}
         <span style={styles.pickerWrapper}>
           <CustomPicker header={server}>
-            <SelectedWrapper>
-              <span onClick={() => setServer('Wings')}>Wings</span></SelectedWrapper>
-            <SelectedWrapper>
-              <span onClick={() => setServer('Tonberry')}>Tonberry</span></SelectedWrapper>
+            { server !== 'Wings' && <SelectedWrapper>
+              <span onClick={() => setServer('Wings')}>Wings</span></SelectedWrapper> }
+            { server !== 'Tonberry' && <SelectedWrapper>
+              <span onClick={() => setServer('Tonberry')}>Tonberry</span></SelectedWrapper> }
           </CustomPicker>
         </span>
       </div>
       <div style={styles.content}>
         {server !== 'Servers' && <PlayerViewList serverData={ToolDefaults.WhoisOnline[server]} />}
+        {server === 'Servers' && <div> Please selected a server to see how many players are actively online.</div>}
       </div>
     </div>
   )
