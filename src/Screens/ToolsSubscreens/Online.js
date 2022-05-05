@@ -8,14 +8,14 @@ import { PlayerViewList } from '../../Components/Tools/ToolsOnline/PlayerViewLis
 
 export const Online = () => {
 
-  const [server, setServer] = useState('Wings');
+  const [server, setServer] = useState('Servers');
 
   return (
     <div>
       <div style={styles.content}>
         <span>World:</span>
         <span style={styles.pickerWrapper}>
-          <CustomPicker header={"Servers"}>
+          <CustomPicker header={server}>
             <SelectedWrapper>
               <span onClick={() => setServer('Wings')}>Wings</span></SelectedWrapper>
             <SelectedWrapper>
@@ -24,7 +24,7 @@ export const Online = () => {
         </span>
       </div>
       <div style={styles.content}>
-        <PlayerViewList serverData={ToolDefaults.WhoisOnline[server]} />
+        {server !== 'Servers' && <PlayerViewList serverData={ToolDefaults.WhoisOnline[server]} />}
       </div>
     </div>
   )
@@ -34,7 +34,7 @@ const styles = {
   content: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 25,
+    margin: '50px 0'
   },
   pickerWrapper: {
     marginTop: '-3px',
