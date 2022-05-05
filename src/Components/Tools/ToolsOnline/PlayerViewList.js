@@ -26,6 +26,6 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    gap: 5
+    gap: 10
   }
 };

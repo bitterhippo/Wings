@@ -39,23 +39,25 @@ export const PlayerView = ({ playerData }) => {
           </div>
         </div>
       </div>
-      <div style={styles.characterInfoWrapper}>
-        <div style={styles.characterInfoBox1}>
-          <span>Server: Wings</span>
-          <span>Status : Online</span>
-          <span>Nation: {playerData.faction.faction}, Rank {playerData.faction.rank} </span>
-          <span>Location: {playerData.zone}</span>
+      {
+        open && <div style={styles.characterInfoWrapper}>
+          <div style={styles.characterInfoBox1}>
+            <span>Server: Wings</span>
+            <span>Status : Online</span>
+            <span>Nation: {playerData.faction.faction}, Rank {playerData.faction.rank} </span>
+            <span>Location: {playerData.zone}</span>
+          </div>
+          <div style={styles.characterInfoBox2}>
+            Jobs
+            {
+              jobsList.map((currentJob, index) =>
+                <div key={currentJob}>
+                  <span style={styles.jobText}>{jobsList[index]} : {playerData.jobs[currentJob]}</span>
+                </div>)
+            }
+          </div>
         </div>
-        <div style={styles.characterInfoBox2}>
-          Jobs
-          {
-            jobsList.map((currentJob, index) =>
-              <div key={currentJob}>
-                <span style={styles.jobText}>{jobsList[index]} : {playerData.jobs[currentJob]}</span>
-              </div>)
-          }
-        </div>
-      </div>
+      }
     </>
   )
 };
@@ -92,6 +94,6 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   }
 };
