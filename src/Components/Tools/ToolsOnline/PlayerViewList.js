@@ -26,6 +26,9 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    gap: 10
+    gap: 10,
+    maxWidth: '700px',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   }
 };
