@@ -24,7 +24,7 @@ const styles = {
   imgWrapper: {
     position: 'absolute',
     zIndex: -2,
-    top: "285px",
+    top: "500px",
     left: "50%",
     transform: "translate(-50%, -50%)",
     opacity: '.2'

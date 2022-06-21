@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 //Subcomponents
 import Colors from '../Colors';
 import { BackgroundImage } from '../Images/BackgroundImg';
+import { HeaderImg } from '../Images/HeaderImg';
 
 export const ContentWrapper = props => {
 
@@ -23,27 +24,32 @@ export const ContentWrapper = props => {
   });
 
   return (
-    <div style={styles.contentWrapper}>
-      <BackgroundImage />
-      {props.children}
-      {/*       Scroll to top button          */}
-      <button
-        style={{
-          ...styles.scrollButton,
-          display: showButton ? 'block' : 'none'
-        }}
-        onClick={() => handleScrollUp()}>
-        Top
-      </button>
+    <div>
+      <HeaderImg />
+      <div style={styles.contentWrapper}>
+        <BackgroundImage />
+        {props.children}
+        {/*       Scroll to top button          */}
+        <button
+          style={{
+            ...styles.scrollButton,
+            display: showButton ? 'block' : 'none'
+          }}
+          onClick={() => handleScrollUp()}>
+          Top
+        </button>
+      </div>
     </div>
   )
 };
 
 const styles = {
   contentWrapper: {
+    display: 'block',
     width: '80%',
     margin: '100px auto 0px auto',
     paddingBottom: '100px',
+    marginTop: 100
   },
   scrollButton: {
     backgroundColor: `${Colors.AshBlack}`,

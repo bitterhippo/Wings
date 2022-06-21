@@ -47,7 +47,3 @@ export const Home = () => {
     </ContentWrapper>
   )
 };
-
-const styles = {
-
-};

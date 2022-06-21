@@ -23,6 +23,6 @@ const styles = {
 
   },
   contentWrapper: {
-    marginLeft: 100
+    marginLeft: 75
   }
 };
